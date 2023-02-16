@@ -1,0 +1,86 @@
+//__________________________________________________________ BASE
+
+
+// VARIABLES
+@import './base/variables';
+// __________________________!
+
+
+// STYLE RESET
+@import './base/style_reset';
+// ____________________________!
+
+
+// FONTS
+@import './base/fonts';
+// _______________________!
+
+
+// CONTAINER 
+@import './base/container';
+// ___________________________!
+
+
+//________________________________________________________COMPONENTS
+
+// BUTTONS
+@import './components/buttons';
+// _______________________________!
+
+
+// MOBILE_MENU
+@import './components/mobile_menu';
+// __________________________________!
+
+
+// MODAL_CONTACT
+@import './components/modal_contact';
+// ____________________________________!
+
+
+// MODAL_CONTACT_DONE
+@import './components/modal_contact_done';
+//_________________________________________!
+
+
+// MODAL_SUBSCRIBE
+@import './components/modal_subscribe';
+// ______________________________________!
+
+
+
+//__________________________________________________________LAYOUT
+
+// HEADER
+@import './layout/header';
+// ________________________!
+
+
+// HERO
+@import './layout/hero';
+// ________________________!
+
+
+// ABOUT
+@import './layout/about';
+// ________________________!
+
+
+// STORE
+@import './layout/store';
+// ________________________!
+
+
+// DELIVERY
+@import './layout/delivery';
+// ___________________________!
+
+
+// BLOG 
+@import './layout/blog';
+// _______________________!
+
+
+// FOOTER
+@import './layout/footer';
+// _________________________!
