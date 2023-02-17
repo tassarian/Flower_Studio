@@ -1,0 +1,23 @@
+.title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(29/24);
+
+    color: $black-color;
+
+    @media screen and (min-width: $tablet){
+            font-size: 44px;
+            line-height: calc(54/44);
+    }
+}
+
+.title::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: $black-color;
+}
