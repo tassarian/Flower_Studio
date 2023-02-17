@@ -1,10 +1,11 @@
-<section class="hero">
+<section class="hero container">
 <div class="hero_content">  
     <h2 class="hero_subtitle">flower<br />studio</h2>
   <picture class="hero_img">
+
     <!-- Desktop screen + Tablet -->
     <source
-      media="(min-width: 768px)"
+      media="(min-width: $tablet)"
       srcset="
         ../img/hero/hero_tablet@1x.webp  1x,
         ../img/hero/hero_tablet@2x..webp 2x
@@ -24,14 +25,17 @@
     <source
       media="(max-width: 767px)"
       srcset="
-        ../img/hero/hero_mob@1x.webp      1x,
-        ../img/hero/hero_mob@2x.webp.webp 2x
+        ../img/hero/hero_mob@1x.webp 1x,
+        ../img/hero/hero_mob@2x.webp 2x
       "
       type="image/webp"
     />
     <source
       media="(max-width: 767px)"
-      srcset="../img/hero/hero_mob@1x.png. 1x, ../img/hero/hero_mob@2x.png 2x"
+      srcset="
+      ../img/hero/hero_mob@1x.png 1x,
+       ../img/hero/hero_mob@2x.png 2x
+       "
       type="image/png"
     />
     <img
