@@ -1,3 +1,9 @@
+@mixin transition($properties) {
+  transition-property: #{$properties};
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: ease-in 250ms;
+}
+
 @mixin media-tablet() {
   // tablet media
   @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {

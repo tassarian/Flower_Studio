@@ -2,23 +2,50 @@
 @import '../utils//mixins';
 
 .button {
+  @include transition('background');
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px 32px;
+  padding: 14px 28px;
   gap: 10px;
-  height: 64px;
-  border-radius: 38px;
-  color: white;
   border: none;
+  color: white;
+
+  background: #e86f54;
+  border-radius: 38px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+
+  min-width: 170px;
+  height: 40px;
 
   &:hover,
   &:active {
-    background: #e86f54;
+    background: #e25b41;
+  }
+
+  &:focus {
+    background: #fa6f54;
+    box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
   }
 }
 
-.button.pricipal {
-  background: #e86f54;
+.button.large {
+  padding: 14px 28px;
+  min-width: 208px;
+  height: 44px;
+}
+
+@include media-tablet-and-desktop {
+  // button.button.large {
+  //   padding: 16px 32px;
+  //   min-width: 280px;
+  //   height: 64px;
+  // }
 }
