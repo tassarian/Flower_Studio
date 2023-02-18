@@ -12,12 +12,27 @@
 
 
 // FONTS
-@import './base/fonts';
+// @import './base/fonts';
 // _______________________!
 
 
 // CONTAINER 
 @import './base/container';
+// ___________________________!
+
+
+// SECTION
+@import './base/section';
+// _________________________!
+
+
+// COMMON
+@import './base/common';
+// ________________________!
+
+
+// TITLE 
+@import './base/title';
 // ___________________________!
 
 
@@ -68,7 +83,7 @@
 
 // STORE
 @import './layout/store';
-// ________________________!
+// ________________________!___________________________,,,,,,,,
 
 
 // DELIVERY
