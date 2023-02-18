@@ -7,11 +7,10 @@
 }
 
 @mixin media-tablet() {
-    // TODO: Media tablet is not working, we have to fix the calculation
   // tablet media
-//   @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
-//     @content;
-//   }
+  @media screen and ((min-width: $tablet) and (max-width: calc($desktop - 1px))) {
+    @content;
+  }
 }
 
 @mixin media-desktop() {
@@ -21,11 +20,10 @@
   }
 }
 
-// TODO: Media tablet is not working, we have to fix the calculation
-// @mixin media-tablet-and-desktop() {
-//   // desktop and table
-//   @media screen and ((min-width: $tablet) and (max-width: calc($desktop - 1px))),
-//     screen and (min-width: $desktop) {
-//     @content;
-//   }
-// }
+@mixin media-tablet-and-desktop() {
+  // desktop and table
+  @media screen and ((min-width: $tablet) and (max-width: calc($desktop - 1px))),
+    screen and (min-width: $desktop) {
+    @content;
+  }
+}

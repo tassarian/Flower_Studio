@@ -42,15 +42,7 @@ button.large {
   height: 44px;
 }
 
-@include media-tablet {
-  button.button {
-    padding: 16px 32px;
-    min-width: 280px;
-    height: 64px;
-  }
-}
-
-@include media-desktop {
+@include media-tablet-and-desktop {
   button.button {
     padding: 16px 32px;
     min-width: 280px;
