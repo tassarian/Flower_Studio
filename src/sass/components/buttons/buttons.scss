@@ -1,5 +1,5 @@
-@import '../utils/variables';
-@import '../utils//mixins';
+@import '../../utils/variables';
+@import '../../utils//mixins';
 
 .button {
   @include transition('background');
@@ -11,9 +11,9 @@
   padding: 14px 28px;
   gap: 10px;
   border: none;
-  color: white;
+  color: $white-color;
 
-  background: #e86f54;
+  background: $main-btn-color;
   border-radius: 38px;
 
   font-family: 'Montserrat';
@@ -27,25 +27,33 @@
 
   &:hover,
   &:active {
-    background: #e25b41;
+    background: $hover-btn-color;
   }
 
   &:focus {
-    background: #fa6f54;
-    box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
+    background: $focus-btn-color;
+    box-shadow: 0px 4px 16px $focus-btn-color-20;
   }
 }
 
-.button.large {
+button.large {
   padding: 14px 28px;
   min-width: 208px;
   height: 44px;
 }
 
-@include media-tablet-and-desktop {
-  // button.button.large {
-  //   padding: 16px 32px;
-  //   min-width: 280px;
-  //   height: 64px;
-  // }
+@include media-tablet {
+  button.button {
+    padding: 16px 32px;
+    min-width: 280px;
+    height: 64px;
+  }
+}
+
+@include media-desktop {
+  button.button {
+    padding: 16px 32px;
+    min-width: 280px;
+    height: 64px;
+  }
 }

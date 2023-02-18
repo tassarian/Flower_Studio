@@ -1,0 +1,70 @@
+/**
+  |============================
+  | Colors
+  |============================
+*/
+/**
+  |============================
+  | Others
+  |============================
+*/
+/**
+  |============================
+  | Colors
+  |============================
+*/
+/**
+  |============================
+  | Others
+  |============================
+*/
+.button {
+  transition-property: background;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: ease-in 250ms;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 28px;
+  gap: 10px;
+  border: none;
+  color: #ffffff;
+  background: #E86F54;
+  border-radius: 38px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3333333333;
+  min-width: 170px;
+  height: 40px;
+}
+.button:hover, .button:active {
+  background: #E25B41;
+}
+.button:focus {
+  background: #FA6F54;
+  box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
+}
+
+button.large {
+  padding: 14px 28px;
+  min-width: 208px;
+  height: 44px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  button.button {
+    padding: 16px 32px;
+    min-width: 280px;
+    height: 64px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  button.button {
+    padding: 16px 32px;
+    min-width: 280px;
+    height: 64px;
+  }
+}/*# sourceMappingURL=buttons.css.map */
