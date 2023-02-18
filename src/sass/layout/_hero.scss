@@ -67,7 +67,7 @@
 // }
 
 
-.hero-img {
+.hero-img .small {
   margin-right: 8px;
   display: block;
 
@@ -78,9 +78,15 @@
   }
 
   @media screen and (min-width: $desktop) {
-    margin-right: 86px;
+    display: none;
   }
 }
+
+//  .hero-img .large {
+// display: block;
+
+
+//  }
 
 .btn {
 }
