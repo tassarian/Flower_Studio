@@ -2,6 +2,7 @@
   position: relative;
   padding-top: 95px;
   padding-bottom: 36px;
+  margin-bottom: 100px;
 
   @media screen and (min-width: $tablet) {
     padding-top: 119px;
@@ -60,13 +61,6 @@
   }
 }
 
-// .hero_subtitle--white:hover .btn_icon-circle,
-// .hero_subtitle--white:focus .btn_icon-circle {
-//   scale: 1.2
-
-// }
-
-
 .hero-img {
   margin-right: 8px;
   display: block;
@@ -82,7 +76,8 @@
   }
 }
 
-.btn {
+.hero-img .large {
+  display: none;
 }
 
 .hero-btn {
@@ -98,54 +93,49 @@
   margin: 0;
   border: none;
 
-
-  
-  @media screen and (min-width: $tablet) {
+@media screen and (min-width: $tablet) {
         width: 145px;
         height: 150px;
   }
 
-  @media screen and (min-width: $desktop) {
+@media screen and (min-width: $desktop) {
     width: 166px;
     height: 166px;
   }
 }
 
-.btn_icon {
-  fill: #000000;
- 
-
-  & .tab,
-  & .desk {
-    opacity: 0;
-  }
-
+.btn_icon-mob {
   @media screen and (min-width: $tablet) {
- 
-
-    &.tab {
-      opacity: 1;
-    }
-
-    &.mob,
-    &.desk {
-      opacity: 0;
-    }
-  }
-  @media screen and (min-width: $desktop) {
-  
-
-    &.desk {
-  
-    opacity: 1;
-    }
-
-    &.mob,
-    &.tab {
-      opacity: 0;
-    }
+    display: none;
   }
 }
+.btn_icon-tab {
+  display: none;
+
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    display: block;
+  }
+}
+
+.btn_icon-text,
+.btn_icon-arrow {
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
+ 
+
+  // @media screen and (min-width: $tablet) 
+ 
+
+
+  // @media screen and (min-width: $desktop) 
+  
+
+
+
 
 .hero-btn--white {
   position: absolute;
@@ -167,15 +157,6 @@
   @media screen and (max-width: $desktop){
   display: none;
 }
-}
-
-.btn_icon-circle {
-  position: absolute;
-}
-
-.btn_icon-arrow {
-  position: absolute;
-  
 }
 
 .hero_title {
@@ -204,6 +185,16 @@
     // left: 50%;
     // transform: translateY(-50%), translateX(-50%);
 
+
+    &::after {
+      content: '';
+      width: 60px;
+      height: 8px;
+      background-color: $black-color;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
   }
 }
 
