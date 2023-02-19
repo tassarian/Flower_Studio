@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flower Studio</title>
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="144x144" href="/flower_studio/assets/apple-touch-icon-2b6ba020.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
-  <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABdFBMVEXob1Tob1Tob1Tob1Tob1Tob1Tob1TnblPob1Tob1Tob1Tob1TnblPnb1TnblPob1Tob1Tob1Tob1TnblPpb1TqcFTSZU25WkW6WkXRZUyZTDo9Ih0+Ix08Ih2VSjnrcFXfa1HXZ07WZ07ealDmblPEX0iNRjZ0Oy58PzG1WEOWSjl2PC+DQjO+XEbnb1TMYktaMCZ3PC9+QDKKRTVZLyZoNiuXSjqCQTNJKCGfTjzhbFLVZk7scVXvclbwclaPRzcWERB7PjFKKCHQZEzZaE+xVkKkUT6mUj8bExKKRTatVUGrVECnUj8/JB2pUj/KYUpYLiVrNyyBQTNiMykaExFpNit4PTDCXkfqb1TscFWLRTZfMiioUj+bTTvuclaaTDtMKSHLYkrFX0hWLiUcFBJAJB6hTz3SZUybTDuRSDjcaVB5PTBTLCRnNSqAQTJOKiJPKyNdMSe0WEPTZU3dalDkbVLbaU/ga1HOY0vPZEzibFL///++7SDIAAAAEnRSTlMPgOjtkBf4+5nm9v7s+fyp+yEHA2gfAAAAAWJLR0R7T9K1/AAAAAd0SU1FB+cCEQoHLCX+nfIAAADzSURBVBjTY2BgZBKCA2YWVgZGNjBTWEQUCETYORg4oZJi4hIS4pJCXAzcEL6olLSMjKycqBCDsJCIPFCxkIKikqKSspAQg5CKqpq6hqaQkpa2jq6QkB6DiL6BoZaRjLGJqZm5haUIUIWVtY2tnb2Do4itraaTswiDsIiLq5u7o4enl7e3j6+fPIOIf0BgkE5wSKiGo6NjWHgEQ2RUtLC8XYxDbJy8vLyIkDCDfHxConJSckpqmlh6RqYK0NCs7Jzo3LzQtOT8gsIioDt4hFSK9UtKy0TKKyqrIoR4GVj4hEREwK4HUsLc/AysHGwI7wvwCwIACjMrBAni2I4AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDItMTdUMTA6MDc6NDQrMDA6MDA02S6TAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTAyLTE3VDEwOjA3OjQ0KzAwOjAwRYSWLwAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==">
-  <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0xNDR4MTQ0LnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIxNDR4MTQ0IiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0KICAgIF0sCiAgICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsCiAgICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJkaXNwbGF5IjogInN0YW5kYWxvbmUiCn0K">
-  <link rel="mask-icon" href="/flower_studio/assets/safari-pinned-tab-6f1452ab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" />
-  
-  <script type="module" crossorigin src="/flower_studio/assets/index-ec808ebb.js"></script>
-  <link rel="stylesheet" href="/flower_studio/assets/index-f71afea8.css">
-</head>
-
-<body>
-  <!-- Header-->
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Flower Studio</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="144x144" href="/flower_studio/assets/apple-touch-icon-2b6ba020.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABdFBMVEXob1Tob1Tob1Tob1Tob1Tob1Tob1TnblPob1Tob1Tob1Tob1TnblPnb1TnblPob1Tob1Tob1Tob1TnblPpb1TqcFTSZU25WkW6WkXRZUyZTDo9Ih0+Ix08Ih2VSjnrcFXfa1HXZ07WZ07ealDmblPEX0iNRjZ0Oy58PzG1WEOWSjl2PC+DQjO+XEbnb1TMYktaMCZ3PC9+QDKKRTVZLyZoNiuXSjqCQTNJKCGfTjzhbFLVZk7scVXvclbwclaPRzcWERB7PjFKKCHQZEzZaE+xVkKkUT6mUj8bExKKRTatVUGrVECnUj8/JB2pUj/KYUpYLiVrNyyBQTNiMykaExFpNit4PTDCXkfqb1TscFWLRTZfMiioUj+bTTvuclaaTDtMKSHLYkrFX0hWLiUcFBJAJB6hTz3SZUybTDuRSDjcaVB5PTBTLCRnNSqAQTJOKiJPKyNdMSe0WEPTZU3dalDkbVLbaU/ga1HOY0vPZEzibFL///++7SDIAAAAEnRSTlMPgOjtkBf4+5nm9v7s+fyp+yEHA2gfAAAAAWJLR0R7T9K1/AAAAAd0SU1FB+cCEQoHLCX+nfIAAADzSURBVBjTY2BgZBKCA2YWVgZGNjBTWEQUCETYORg4oZJi4hIS4pJCXAzcEL6olLSMjKycqBCDsJCIPFCxkIKikqKSspAQg5CKqpq6hqaQkpa2jq6QkB6DiL6BoZaRjLGJqZm5haUIUIWVtY2tnb2Do4itraaTswiDsIiLq5u7o4enl7e3j6+fPIOIf0BgkE5wSKiGo6NjWHgEQ2RUtLC8XYxDbJy8vLyIkDCDfHxConJSckpqmlh6RqYK0NCs7Jzo3LzQtOT8gsIioDt4hFSK9UtKy0TKKyqrIoR4GVj4hEREwK4HUsLc/AysHGwI7wvwCwIACjMrBAni2I4AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDItMTdUMTA6MDc6NDQrMDA6MDA02S6TAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTAyLTE3VDEwOjA3OjQ0KzAwOjAwRYSWLwAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="/>
+    <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0xNDR4MTQ0LnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIxNDR4MTQ0IiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0KICAgIF0sCiAgICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsCiAgICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJkaXNwbGF5IjogInN0YW5kYWxvbmUiCn0K"/>
+    <link rel="mask-icon" href="/flower_studio/assets/safari-pinned-tab-6f1452ab.svg" color="#5bbad5"/>
+    <meta name="msapplication-TileColor" content="#da532c"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"/>
+    
+    <script type="module" crossorigin src="/flower_studio/assets/index-ec808ebb.js"></script>
+    <link rel="stylesheet" href="/flower_studio/assets/index-897dc8e9.css">
+  </head>
+  <body>
+    <!-- Header-->
 <header class="header">
   <div class="container">
     <nav class="navigation">
@@ -72,49 +66,44 @@
   </div>
 </header>
 
-  <section class="hero container">
-<div class="hero_content">  
+    <section class="hero container">
+  <div class="hero_content">
     <h2 class="hero_subtitle">flower<br />studio</h2>
-    <img class="hero-img"
-      srcset="
-      ../img/hero/mob/hero_145.png 145w,
-      ../img/hero/mob/hero_290.png 290w,
-      ../img/hero/tab/hero_390.png 390w,
-      ../img/hero/tab/hero_780.png 780w,
-      "
+    <img
+      class="hero-img"
+      srcset="/flower_studio/assets/hero-145-fcfd3f3b.png 145w, /flower_studio/assets/hero-290-de59298f.png 290w, /flower_studio/assets/hero-390-903067a8.png 390w, /flower_studio/assets/hero-780-d415cae8.png 780w"
       sizes="(min-width: 1280px) 542px, (min-width: 768px) 390px, (min-width: 480px) 145px 100vw"
-      src="../img/hero/tab/hero_390.png"
+      src="/flower_studio/assets/hero-390-903067a8.png"
       alt="Flower"
       width="145"
       height="274"
-      loading="lazy"/>
-  <button class="btn hero-btn" type="button">
-    <svg class="btn_icon">
-      <use class="btn_icon mob"  href="../img/sprite.svg#icon-btn_mob"></use>
-      <use class="btn_icon tab"  href="../img/sprite.svg#icon-btn_tablet"></use>
-      <use class="btn_icon desk"  href="../img/sprite.svg#icon-btn_desk"></use>
-    </svg>
-  </button>
+      loading="lazy"
+    />
+    <button class="btn hero-btn" type="button">
+      <svg class="btn_icon">
+        <use class="btn_icon mob" href="../img/sprite.svg#icon-btn_mob"></use>
+        <use
+          class="btn_icon tab"
+          href="../img/sprite.svg#icon-btn_tablet"
+        ></use>
+        <use class="btn_icon desk" href="../img/sprite.svg#icon-btn_desk"></use>
+      </svg>
+    </button>
   </div>
   <h2 class="hero_subtitle--white">flower<br />studio</h2>
   <button class="btn hero-btn--white" type="button">
     <svg class="btn_icon-circle" width="166" height="166">
-      <use  href="../img/sprite.svg#icon-now-shop-desk"></use>
+      <use href="../img/sprite.svg#icon-now-shop-desk"></use>
     </svg>
     <svg class="btn_icon-arrow" width="60px">
-     <use  href="../img/sprite.svg#icon-btn_desk_arrow"></use>
+      <use href="../img/sprite.svg#icon-btn_desk_arrow"></use>
     </svg>
   </button>
 
-    <h1 class="hero_title">ANEMONE</h1>
-  
-
+  <h1 class="hero_title">ANEMONE</h1>
 </section>
 
-
-
-
-  <section id="about" class="section">
+    <section id="about" class="section">
   <div class="container">
     <h2 class="about__title title">About</h2>
     <div class="about__wrapper">
@@ -126,15 +115,15 @@
       <img
         class="about__photo"
         srcset="
-          ../img/about/mobile/about_m.jpg      288w,
-          ../img/about/tablet/about_t.jpg      344w,
-          ../img/about/desktop/about_d.jpg     632w,
-          ../img/about/mobile/about@2x_m.jpg   576w,
-          ../img/about/tablet/about@2x_t.jpg   688w,
-          ../img/about/desktop/about@2x_d.jpg 1264w
+          ../img/about/mobile/about-m.jpg   288w,
+          ../img/about/tablet/about-t.jpg      344w,
+          ../img/about/desktop/about-d.jpg     632w,
+          ../img/about/mobile/about@2x-m.jpg   576w,
+          ../img/about/tablet/about@2x-t.jpg   688w,
+          ../img/about/desktop/about@2x-d.jpg 1264w
         "
         sizes="(min-width: 1280px) 632px, (min-width: 768px) 344px, (min-width: 480px) 288px, 100vw"
-        src="../images/about/mobile/about_m.jpg"
+        src="../img/about/mobile/about-m.jpg"
         alt="Two orange protea flowers"
         width="632"
         height="344"
@@ -143,7 +132,7 @@
   </div>
 </section>
 
-  <section class="section">
+    <section id="store" class="section">
   <div class="container store">
     <div class="store__title-line">
       <h2 class="store__title">STORE</h2>
@@ -154,15 +143,15 @@
         <img
           class="store__picture"
           srcset="
-            ../img/store/mobile/bouquet1_mob@1x.jpg       136w,
-            ../img/store/tabl/bouquet1_tab@1x.jpg         344w,
-            ../img/store/desktop/bouquet1_desktop@1x.jpg  600w,
-            ../img/store/mobile/bouquet1_mob@2x.jpg       272w,
-            ../img/store/tabl/bouquet1_tab@2x.jpg         688w,
-            ../img/store/desktop/bouquet1_desktop@2x.jpg 1200w
+            ../img/store/mobile/bouquet1-mob@1x.jpg       136w,
+            ../img/store/tablet/bouquet1-tab@1x.jpg         344w,
+            ../img/store/desktop/bouquet1-desktop@1x.jpg  600w,
+            ../img/store/mobile/bouquet1-mob@2x.jpg       272w,
+            ../img/store/tablet/bouquet1-tab@2x.jpg         688w,
+            ../img/store/desktop/bouquet1-desktop@2x.jpg 1200w
           "
           sizes="(min-width: 1280px) 600px, (min-width: 768px) 344px, (min-width: 480px) 136px, 100vw"
-          src="../img/store/mobile/bouquet1_mob@1x.jpg"
+          src="../img/store/mobile/bouquet1-mob@1x.jpg"
           alt="Bouquet №1"
           width="136"
           height="208"
@@ -175,15 +164,15 @@
         <img
           class="store__picture"
           srcset="
-            ../img/store/mobile/bouquet2_mob@1x.jpg       136w,
-            ../img/store/tabl/bouquet2_tab@1x.jpg         344w,
-            ../img/store/desktop/bouquet2_desktop@1x.jpg  600w,
-            ../img/store/mobile/bouquet2_mob@2x.jpg       272w,
-            ../img/store/tabl/bouquet2_tab@2x.jpg         688w,
-            ../img/store/desktop/bouquet2_desktop@2x.jpg 1200w
+            ../img/store/mobile/bouquet2-mob@1x.jpg       136w,
+            ../img/store/tablet/bouquet2-tab@1x.jpg         344w,
+            ../img/store/desktop/bouquet2-desktop@1x.jpg  600w,
+            ../img/store/mobile/bouquet2-mob@2x.jpg       272w,
+            ../img/store/tablet/bouquet2-tab@2x.jpg         688w,
+            ../img/store/desktop/bouquet2_-esktop@2x.jpg 1200w
           "
           sizes="(min-width: 1280px) 600px, (min-width: 768px) 344px, (min-width: 480px) 136px, 100vw"
-          src="../img/store/mobile/bouquet2_mob@1x.jpg"
+          src="../img/store/mobile/bouquet2-mob@1x.jpg"
           alt="Bouquet S"
           width="136"
           height="208"
@@ -196,15 +185,15 @@
         <img
           class="store__picture"
           srcset="
-            ../img/store/mobile/bouquet3_mob@1x.jpg       136w,
-            ../img/store/tabl/bouquet3_tab@1x.jpg         344w,
-            ../img/store/desktop/bouquet3_desktop@1x.jpg  600w,
-            ../img/store/mobile/bouquet3_mob@2x.jpg       272w,
-            ../img/store/tabl/bouquet3_tab@2x.jpg         688w,
-            ../img/store/desktop/bouquet3_desktop@2x.jpg 1200w
+            ../img/store/mobile/bouquet3-mob@1x.jpg       136w,
+            ../img/store/tablet/bouquet3-tab@1x.jpg         344w,
+            ../img/store/desktop/bouquet3-desktop@1x.jpg  600w,
+            ../img/store/mobile/bouquet3-mob@2x.jpg       272w,
+            ../img/store/tablet/bouquet3-tab@2x.jpg         688w,
+            ../img/store/desktop/bouquet3-desktop@2x.jpg 1200w
           "
           sizes="(min-width: 1280px) 600px, (min-width: 768px) 344px, (min-width: 480px) 136px, 100vw"
-          src="../img/store/mobile/bouquet3_mob@1x.jpg"
+          src="../img/store/mobile/bouquet3-mob@1x.jpg"
           alt="Bouquet M"
           width="136"
           height="208"
@@ -217,15 +206,15 @@
         <img
           class="store__picture"
           srcset="
-            ../img/store/mobile/bouquet4_mob@1x.jpg       136w,
-            ../img/store/tabl/bouquet4_tab@1x.jpg         344w,
-            ../img/store/desktop/bouquet4_desktop@1x.jpg  600w,
-            ../img/store/mobile/bouquet4_mob@2x.jpg       272w,
-            ../img/store/tabl/bouquet4_tab@2x.jpg         688w,
-            ../img/store/desktop/bouquet4_desktop@2x.jpg 1200w
+            ../img/store/mobile/bouquet4-mob@1x.jpg       136w,
+            ../img/store/tablet/bouquet4-tab@1x.jpg         344w,
+            ../img/store/desktop/bouquet4-desktop@1x.jpg  600w,
+            ../img/store/mobile/bouquet4-mob@2x.jpg       272w,
+            ../img/store/tablet/bouquet4-tab@2x.jpg         688w,
+            ../img/store/desktop/bouquet4-desktop@2x.jpg 1200w
           "
           sizes="(min-width: 1280px) 600px, (min-width: 768px) 344px, (min-width: 480px) 136px, 100vw"
-          src="../img/store/mobile/bouquet4_mob@1x.jpg"
+          src="../img/store/mobile/bouquet4-mob@1x.jpg"
           alt="Bouquet L"
           width="136"
           height="208"
@@ -235,32 +224,64 @@
         <p class="store__price">from $60</p>
       </li>
     </ul>
-    <button type="button" class="store__button">Order flowers</button>
+    <button data-modal-open type="button" class="store__button">Order flowers</button>
   </div>
 </section>
 
-  <section class="delivery section">
+    <section class="delivery section" id="delivery">
   <div class="container">
     <h2 class="delivery__title title">Delivery</h2>
     <ul class="delivery__list">
       <li class="delivery__item">
-        Choose your bouquet and make an order on website
+        <div class="delivery__circle">
+          <span class="delivery__number">1</span>
+        </div>
+        <p class="delivery__text">
+          Choose your bouquet and make an order on website
+        </p>
       </li>
       <li class="delivery__item">
-        Wait for the call to clarify the details of the order.You can pay online
-        or to the courier
+        <div class="delivery__circle">
+          <span class="delivery__number">2</span>
+        </div>
+        <p class="delivery__text">
+          Wait for the call to clarify the details of the order.You can pay
+          online or to the courier
+        </p>
       </li>
       <li class="delivery__item">
-        Wait for the delivery at the selected time or pick up the order from the
-        store
+        <div class="delivery__circle">
+          <span class="delivery__number">3</span>
+        </div>
+        <p class="delivery__text">
+          Wait for the delivery at the selected time or pick up the order from
+          the store
+        </p>
       </li>
-      <li class="delivery__item">Make someone happy or enjoy yourself</li>
+      <li class="delivery__item">
+        <div class="delivery__circle">
+          <span class="delivery__number">4</span>
+        </div>
+        <p class="delivery__text">Make someone happy or enjoy yourself</p>
+      </li>
     </ul>
-    <img class="delivery__img" src="" alt="" />
+    <img
+      class="delivery__img"
+      src="../img/delivery/mobile/del-mob@1x.jpg"
+      srcset="
+        ../img/delivery/mobile/del-mob@1x.jpg,
+        ../img/delivery/mobile/del-mob@2x.jpg,
+        ../img/delivery/tablet/del-tab@1x.jpg,
+        ../img/delivery/tablet/del-tab@2x.jpg,
+        ../img/delivery/desktop/del-desk@1x.jpg,
+        ../img/delivery/desktop/del-desk@2x.jpg
+      "
+      alt="Colorful flowers"
+    />
   </div>
 </section>
 
-  <section class="blog section" id="blog">
+    <section class="blog section" id="blog">
   <div class="blog__container container">
     <h2 class="title">Blog</h2>
     <ul class="blog__list">
@@ -276,7 +297,7 @@
             ../img/blog/desktop/img2-630.jpg 630w
           "
           sizes="(min-width: 1280px) 315px, (min-width: 768px) 287px, (min-width: 320px) 122px, 100vw"
-          src="../img/blog/mobile/img2-122.jpg"
+          src="../img/blog/Mobile/img2-122.jpg"
           alt="green branches"
           loading="lazy"
         />
@@ -293,7 +314,7 @@
             ../img/blog/desktop/img1-780.jpg 780w
           "
           sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 153px, 100vw"
-          src="../img/blog/mobile/img1-153.jpg"
+          src="../img/blog/Mobile/img1-153.jpg"
           alt="pink calla"
           loading="lazy"
         />
@@ -320,21 +341,21 @@
     <button class="blog__btn" type="button">Subscribe</button>
     <button class="blog__btn-left" type="button" aria-label="arrow left">
       <svg class="blog__icon" width="41" height="27">
-        <use href="../img/sprite.svg#icon-blog_left"></use>
+        <use href="../img/sprite.svg#icon-blog-left"></use>
       </svg>
     </button>
     <button class="blog__btn-right" type="button" aria-label="arrow right">
       <svg class="blog__icon" width="41" height="27">
-        <use href="../img/sprite.svg#icon-blog_right"></use>
+        <use href="../img/sprite.svg#icon-blog-right"></use>
       </svg>
     </button>
   </div>
 </section>
 
-  <footer class="footer">
+    <footer class="footer">
   <section class="footer__container container">
     <a class="footer__logo" href="../index.html">
-      <svg class="footer__logo-icon">
+      <svg class="footer__logo-icon" width="73" height="57">
         <use href="../img/"></use>
       </svg>
     </a>
@@ -342,16 +363,24 @@
       <h3 class="footer__navigation-title footer__title">Navigation</h3>
       <ul>
         <li class="item">
-          <a class="footer__navigation-link" href="">Anemone</a>
+          <a class="footer__navigation-link footer__link" href="#hero"
+            >Anemone</a
+          >
         </li>
         <li class="item">
-          <a class="footer__navigation-link" href="">About us</a>
+          <a class="footer__navigation-link footer__link" href="#about"
+            >About us</a
+          >
         </li>
         <li class="item">
-          <a class="footer__navigation-link" href="">Store</a>
+          <a class="footer__navigation-link footer__link" href="#store"
+            >Store</a
+          >
         </li>
         <li class="item">
-          <a class="footer__navigation-link" href="">Delivery</a>
+          <a class="footer__navigation-link footer__link" href="#delivery"
+            >Delivery</a
+          >
         </li>
       </ul>
     </div>
@@ -363,28 +392,31 @@
       <h3 class="footer__title">Contacts</h3>
       <ul>
         <li class="footer__contacts-item">
-          <a class="footer__contacts" href="tel:+380631234567"
+          <a class="footer__contacts-link footer__link" href="tel:+380631234567"
             >+38 063 123 45 67</a
           >
         </li>
         <li class="footer__contacts-item">
-          <a class="footer__contacts" href="mailto:anemonestudio@example.com"
-            >anemonestudio@example.com
-          </a>
+          <a
+            class="footer__contacts-link footer__link"
+            href="mailto:anemonestudio@example.com"
+            >anemonestudio<br class="br" />@example.com</a
+          >
         </li>
         <li class="footer__contacts-item">
           <a
-            class="footer__contacts"
+            class="footer__contacts-link footer__link"
             target="_blank"
             rel="noreferrer noopener"
             href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%A0%D0%B5%D0%B9%D1%82%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%8F,+11,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4512222,30.5105072,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4ce5bde74d21f:0x3ddb1fc45e18228!8m2!3d50.4512188!4d30.5126959!16s%2Fg%2F11c5fhwzrb?hl=ru"
-            >Reitarska Street, 11<br />Kyiv, Ukraine
+            >Reitarska Street 11,<br class="br" />
+            Kyiv, Ukraine
           </a>
         </li>
       </ul>
     </div>
     <div class="footer__social-sect">
-      <ul>
+      <ul class="footer__social-list">
         <li class="footer__social-item">
           <a
             class="footer__social-link"
@@ -414,15 +446,48 @@
   </section>
 </footer>
 
-  
-  
-  
-  
+    
+    <div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <div class="modal__btn">
+      <button class="modal__button" data-modal-close>
+        <svg class="modal-icon-close" width="18" height="18">
+          <use href="../img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <strong class="modal__title">Contack us</strong>
+    <p>
+      If you have any additional questions or you want to clarify something
+      before you make an order please fill in your contact details. We will call
+      you back.
+    </p>
+    <form class="modal__form">
+      <label class="modal__label">
+        <span class="modal-comment">Name</span>
+        <input
+          type="text"
+          name="Your name"
+          pattern="[a-z]{1,25}"
+          title="Username should only contain lowercase letters. e.g. john"
+        />
+      </label>
+      <label class="modal__label">
+        <span class="modal__comment">Email</span>
+        <input type="email" name="Your Email" pattern="^\S+@\S+\.\S+$" />
+      </label>
+      <div class="button-send">
+        <button data-modal-open class="modal__button-send" type="submit">
+          Send
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
 
-  <!-- Loads the specified .html file -->
-  <!-- ENOENT: no such file or directory, open '/home/runner/work/flower_studio/flower_studio/src/partials/vite-promo.html' -->
+    
+    
 
-  
-</body>
-
+    
+  </body>
 </html>
