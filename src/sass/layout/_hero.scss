@@ -2,6 +2,7 @@
   position: relative;
   padding-top: 95px;
   padding-bottom: 36px;
+  margin-bottom: 100px;
 
   @media screen and (min-width: $tablet) {
     padding-top: 119px;
@@ -55,7 +56,7 @@
   color: black;
   opacity: 1;
 
-  @media screen and (max-width: $desktop){
+  @media screen and (max-width: $desktop) {
     display: none;
   }
 }
@@ -66,16 +67,11 @@
 
 // }
 
-
 .hero-img {
   margin-right: 8px;
   display: block;
   width: 145px;
   height: 274px;
-
-  & .large {
-    display: none;
-  }
 
   @media screen and (min-width: $tablet) {
     margin-right: 20px;
@@ -88,11 +84,10 @@
   // }
 }
 
-//  .hero-img .large {
-// display: block;
+.hero-img .large {
+  display: none;
+}
 
-
-//  }
 
 .btn {
 }
@@ -111,10 +106,9 @@
   border: none;
 
 
-  
   @media screen and (min-width: $tablet) {
-        width: 145px;
-        height: 150px;
+    width: 145px;
+    height: 150px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -123,43 +117,30 @@
   }
 }
 
-.btn_icon {
-  fill: #000000;
- 
 
-  & .tab,
-  & .desk {
-    opacity: 0;
-  }
 
-  @media screen and (min-width: $tablet) {
- 
-
-    &.tab {
-      opacity: 1;
-    }
-
-    &.mob,
-    &.desk {
-      opacity: 0;
-    }
-  }
-  @media screen and (min-width: $desktop) {
-  
-
-    &.desk {
-      fill: black;
-      
-  
-    opacity: 1;
-    }
-
-    &.mob,
-    &.tab {
-      opacity: 0;
-    }
+.btn_icon-tab {
+  display: none; 
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    display: block;
   }
 }
+
+
+.btn_icon-text,
+.btn_icon-arrow {
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: block;
+    }
+  }
+
+.btn_icon-mob {
+ @media screen and (min-width: $tablet) {
+      display: none;
+    }
+
+  }
 
 .hero-btn--white {
   position: absolute;
@@ -178,19 +159,11 @@
   outline: transparent;
   cursor: pointer;
 
-  @media screen and (max-width: $desktop){
-  display: none;
-}
-}
-
-.btn_icon-circle {
-  position: absolute;
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
 }
 
-.btn_icon-arrow {
-  position: absolute;
-  
-}
 
 .hero_title {
   font-family: 'Montserrat';
@@ -205,19 +178,28 @@
   transform: translateX(-50%);
   z-index: 10;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 120px;
     line-height: calc(146 / 120);
     color: #000000;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 160px;
     line-height: calc(195 / 160);
     // bottom: 50%;
     // left: 50%;
     // transform: translateY(-50%), translateX(-50%);
-
+    
   }
 }
 
+.hero_title::after {
+  content: '';
+  width: 8px;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: $black-color;
+  }
