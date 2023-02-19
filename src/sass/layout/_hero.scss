@@ -27,7 +27,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: calc(17 / 14);
-  color: #000000;
+  color: $black-color;
 
   @media screen and (min-width: $tablet) {
     font-size: 24px;
@@ -67,9 +67,15 @@
 // }
 
 
-.hero-img .small {
+.hero-img {
   margin-right: 8px;
   display: block;
+  width: 145px;
+  height: 274px;
+
+  & .large {
+    display: none;
+  }
 
   @media screen and (min-width: $tablet) {
     margin-right: 20px;
@@ -77,9 +83,9 @@
     height: 636px;
   }
 
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   display: none;
+  // }
 }
 
 //  .hero-img .large {
