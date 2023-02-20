@@ -1,0 +1,71 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+@import '../utils/animations';
+
+.modal2 {
+    min-width: 272px;
+    max-width: 480px;
+    width: 100%;
+    padding: 32px 16px;
+
+    background-color: $white-color;
+    position: relative;
+    transition: transform 250ms liniar;
+    animation: zoom 750ms linear forwards;
+
+    @media screen and (min-width:$tablet) {
+        padding: 54px 32px;
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: calc(24 / 20);
+        margin-bottom: 14px;
+        display: block;
+
+        @media screen and (min-width: 768px) {
+            font-size: 32px;
+            line-height: calc(39 / 32);
+            margin-bottom: 16px;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 12px;
+        line-height: calc(15 / 12);
+        margin-bottom: 18px;
+        color: $main-grey-color;
+
+        @media screen and (min-width: 768px) {
+            font-size: 16px;
+            line-height: calc(20 / 16);
+            margin-bottom: 34px;
+        }
+    }
+
+    &__button-send {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: calc(17 / 14);
+        color: #fff;
+        background-color: #E86F54;
+        border-radius: 8px;
+        border: 0;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 240px;
+        height: 37px;
+        padding: 10px 35px;
+
+        @media screen and (min-width: 768px) {
+            height: 50px;
+            min-width: 416px;
+        }
+    }
+
+}
+
