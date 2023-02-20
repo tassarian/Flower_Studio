@@ -76,3 +76,17 @@
         background-color: $white-color;
     }
 }
+
+@keyframes zoom {
+    0% {
+        transform: scale(0.2);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
