@@ -1,20 +1,53 @@
 <section class="delivery section" id="delivery">
-  <div class="container">
+  <div class="delivery__container container">
     <h2 class="delivery__title title">Delivery</h2>
     <ul class="delivery__list">
       <li class="delivery__item">
-        Choose your bouquet and make an order on website
+        <div class="delivery__circle">
+          <span class="delivery__number">1</span>
+        </div>
+        <p class="delivery__text">
+          Choose your bouquet and make an order on website
+        </p>
       </li>
       <li class="delivery__item">
-        Wait for the call to clarify the details of the order.You can pay online
-        or to the courier
+        <div class="delivery__circle">
+          <span class="delivery__number">2</span>
+        </div>
+        <p class="delivery__text">
+          Wait for the call to clarify the details of the order.You can pay
+          online or to the courier
+        </p>
       </li>
       <li class="delivery__item">
-        Wait for the delivery at the selected time or pick up the order from the
-        store
+        <div class="delivery__circle">
+          <span class="delivery__number">3</span>
+        </div>
+        <p class="delivery__text">
+          Wait for the delivery at the selected time or pick up the order from
+          the store
+        </p>
       </li>
-      <li class="delivery__item">Make someone happy or enjoy yourself</li>
+      <li class="delivery__item">
+        <div class="delivery__circle">
+          <span class="delivery__number">4</span>
+        </div>
+        <p class="delivery__text">Make someone happy or enjoy yourself</p>
+      </li>
     </ul>
-    <img class="delivery__img" src="" alt="" />
+    <img
+      class="delivery__img"
+      srcset="
+        ./img/delivery/mobile/del-mob@1x.jpg,
+        ./img/delivery/mobile/del-mob@2x.jpg,
+        ./img/delivery/tablet/del-tab@1x.jpg,
+        ./img/delivery/tablet/del-tab@2x.jpg,
+        ./img/delivery/desktop/del-desk@1x.jpg,
+        ./img/delivery/desktop/del-desk@2x.jpg
+      "
+      src="./img/delivery/mobile/del-mob@1x.jpg"
+      sizes="(min-width: 1200px) 1280px, (min-width: 768px) 768px, (min-width: 480px) 320px"
+      alt="Colorful flowers"
+    />
   </div>
 </section>

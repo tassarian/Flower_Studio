@@ -1,0 +1,31 @@
+.navigations__item {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.container_header {
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 19px;
+  align-items: center;
+}
+
+.navigations__list {
+}
+
+.style_none {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.contact__link {
+  margin-right: 18px;
+}

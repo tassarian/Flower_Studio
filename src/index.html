@@ -2,9 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <title>Flower Studio</title>
+
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
@@ -31,21 +35,21 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+
     <!-- Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     />
     <link rel="stylesheet" href="./sass/main.scss" />
   </head>
-
   <body>
     <load ="partials/header.html" />
     <load ="partials/hero.html" />
@@ -59,9 +63,10 @@
     <load ="partials/modal_contact_done.html" />
     <load ="partials/modal_subscribe.html" />
 
-    <!-- Loads the specified .html file -->
-    <!-- < ="partials/vite/vite-promo.html" /> -->
-
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/slider.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/modal_contact.js"></script>
   </body>
 </html>
