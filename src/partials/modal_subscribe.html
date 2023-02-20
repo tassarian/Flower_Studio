@@ -1,67 +1,43 @@
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal subscribe">
-    <div class="subscribe__photo__wrapper">
-      <picture class="subscribe__photo">
-        <!-- Desktop screen -->
-        <source
-          media="(min-width: 1280px)"
-          srcset="
-            ./img/modal_subscribe/subscribe_d.jpg,
-            ./img/modal_subscribe/subscribe2x_d.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <!-- Tablet screen -->
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./img/modal_subscribe/subscribe_t.jpg,
-            ./img/modal_subscribe/subscribe2x_t.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <!-- Mobile screen -->
-        <source
-          media="(min-width: 320px)"
-          srcset="
-            ./img/modal_subscribe/subscribe_m.jpg,
-            ./img/modal_subscribe/subscribe2x_m.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <img
-          class="card-img"
-          src="./img/modal_subscribe/subscribe_m.jpg"
-          alt="Bunch of orange flowers - tulips, roses and others"
-          loading="lazy"
-        />
-      </picture>
+<div class="backdrop is-hidden" data-subscribe>
+    <div class="modal subscribe">
+        <div class="subscribe__photo__wrapper">
+            <picture class="subscribe__photo">
+                <!-- Desktop screen -->
+                <source media="(min-width: 1280px)"
+                    srcset="./img/modal_subscribe/subscribe_d.jpg, ./img/modal_subscribe/subscribe2@_d.jpg 2x"
+                    type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                    srcset="./img/modal_subscribe/subscribe_t.jpg, ./img/modal_subscribe/subscribe2@_t.jpg 2x"
+                    type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(min-width: 320px)"
+                    srcset="./img/modal_subscribe/subscribe_m.jpg, ./img/modal_subscribe/subscribe2@_m.jpg 2x"
+                    type="image/jpg" />
+                <img class="card-img" src="./img/modal_subscribe/subscribe_m.jpg"
+                    alt="Bunch of orange flowers - tulips, roses and others" loading="lazy" />
+            </picture>
 
-      <button class="subscribe__close" data-modal-close>
-        <svg class="subscribe__close-icon" width="24" height="24">
-          <use href="./img/sprite.svg#icon-menu_close_icon"></use>
-        </svg>
-      </button>
+            <button class="subscribe__close" data-subscribe-close>
+                <svg class="subscribe__close-icon" width="24" height="24">
+                    <use href="./img/sprite.svg#close-button"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="subscribe__info-wrapper">
+            <strong class="subscribe__title">Follow to our newsletter</strong>
+            <p class="subscribe__text">
+                Be the first to get exclusive offers and the latest news on our product
+                directly in your box.
+            </p>
+            <form class="subscribe__form">
+                <label class="subscribe__form__label">
+                    <span class="subscribe__form__comment">Email</span>
+                    <input class="subscribe__form__input" type="email" name="e-mail" placeholder="Your email"
+                        required />
+                </label>
+                <button type="submit" class="subscribe__btn" data-subscribe-close>Subscribe</button>
+            </form>
+        </div>
     </div>
-    <div class="subscribe__info-wrapper">
-      <strong class="subscribe__title">Follow to our newsletter</strong>
-      <p class="subscribe__text">
-        Be the first to get exclusive offers and the latest news on our product
-        directly in your box.
-      </p>
-      <form class="subscribe__form">
-        <label class="subscribe__form__label">
-          <span class="subscribe__form__comment">Email</span>
-          <input
-            class="subscribe__form__input"
-            type="email"
-            name="e-mail"
-            placeholder="Your email"
-            required
-          />
-        </label>
-        <button type="submit" class="subscribe__btn">Subscribe</button>
-      </form>
-    </div>
-  </div>
 </div>
