@@ -8,6 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <title>Flower Studio</title>
+
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
@@ -34,7 +35,9 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+
     <!-- Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -123,18 +126,21 @@
   />
   <div class="hero_content">
     <h2 class="hero_subtitle">flower<br />studio</h2>
-    <div class="hero-img">
-      <img
-        class="hero-img small"
-        srcset="/flower_studio/assets/hero-145-fcfd3f3b.png 145w, /flower_studio/assets/hero-290-de59298f.png 290w, /flower_studio/assets/hero-390-903067a8.png 390w, /flower_studio/assets/hero-780-d415cae8.png 780w"
-        sizes="(min-width: 1280px) 542px, (min-width: 768px) 390px, (min-width: 480px) 145px 100vw"
-        src="/flower_studio/assets/hero-390-903067a8.png"
-        alt="Flower"
-        width="290"
-        height="274"
-        loading="lazy"
-      />
-    </div>
+    <img
+      class="hero-img"
+      srcset="
+        ../img/hero/mob/hero_145.png 145w,
+        ../img/hero/mob/hero_290.png 290w,
+        ../img/hero/tab/hero_390.png 390w,
+        ../img/hero/tab/hero_780.png 780w
+      "
+      sizes="(min-width: 1280px) 542px, (min-width: 768px) 390px, (min-width: 480px) 145px 100vw"
+      src="../img/hero/tab/hero_390.png"
+      alt="Flower"
+      width="145"
+      height="274"
+      loading="lazy"
+    />
     <button class="btn hero-btn" type="button">
       <svg class="btn_icon">
         <use class="btn_icon-mob" href="/flower_studio/assets/sprite-f5ed653b.svg#icon-btn_mob"></use>
@@ -316,14 +322,14 @@
     </ul>
     <img
       class="delivery__img"
-      src="../img/delivery/mobile/del_mob@1x.jpg"
+      src="../img/delivery/Mobile/del_mob@1x.jpg"
       srcset="
-        ./img/delivery/Mobile/del_mob@1x.jpg    320w,
-        ./img/delivery/Mobile/del_mob@2x.jpg    640w,
-        ./img/delivery/Tablet/del_tab@1x.jpg    768w,
-        ./img/delivery/Tablet/del_tab@2x.jpg   1536w,
-        ./img/delivery/Desktop/del_desk@1x.jpg 1280w,
-        ./img/delivery/Desktop/del_desk@2x.jpg 2560w
+        ../img/delivery/Mobile/del_mob@1x.jpg,
+        ../img/delivery/Mobile/del_mob@2x.jpg,
+        ../img/delivery/Tablet/del_tab@1x.jpg,
+        ../img/delivery/Tablet/del_tab@2x.jpg,
+        ../img/delivery/Desktop/del_desk@1x.jpg,
+        ../img/delivery/Desktop/del_desk@2x.jpg
       "
       sizes="(min-width: 1200px) 1280px, (min-width: 768px) 768px, (min-width: 480px) 320px"
       alt="Colorful flowers"
