@@ -13,49 +13,8 @@
     @media screen and (min-width: 1280px){
       
     }
+  }
 
-}
-
-&__title{
-    color: #000000;
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    line-height: 1.2;
-    @media screen and (min-width: 768px){
-        font-size: 44px;
-   }
-   @media screen and (min-width: 1280px){
-   
-   }
-
-}
-&__title-line{
-    display: flex;
- 
-    align-items: center;
-    padding-bottom: 32px;
-    @media screen and (min-width: 768px){
-        padding-bottom: 60px;
-    }
-    @media screen and (min-width: 1280px){
-        padding-bottom: 80px;
-    }
-
-  
-}
-&__line{
-    min-width: 190px;
-    border: 1px solid #000000;
-    margin-left: 14px;
-    @media screen and (min-width: 768px){
-      min-width: 538px;
-    }
-    @media screen and (min-width: 1280px){
-       min-width: 1062px;
-    }
-
-}
 &__list{
     width: calc((100% - 1 * 16px) / 2);
    
@@ -73,7 +32,7 @@
    }
 }
 &__name{
-    color: #000000;
+    color: $black-color;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -89,7 +48,7 @@
        }
 }
 &__price{
-    color: #000000;
+    color: $black-color;
     opacity: 0.6;
     font-size: 12px;
     font-weight: 600;
@@ -111,8 +70,8 @@
     min-width: 208px;
     height: 44px;
     padding: 10px 35px;
-    background-color: #e86f54;
-    color: #fff;
+    background-color:$main-btn-color;
+    color: $white-color;
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.06em;
