@@ -28,8 +28,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: calc(17 / 14);
-  color: #000000;
-  // transition: opacity 1s ease-in-out;
+  color: $black-color;
+ 
 
   @media screen and (min-width: $tablet) {
     font-size: 24px;
@@ -40,8 +40,7 @@
       font-size: 32px;
       line-height: calc(39 / 32);
       margin-right: 110px;
-      // opacity: 0;
-      animation: move-left-unvisible 1s ease-in-out forwards;
+      animation: move-left-invisible 1s ease-in-out forwards;
     }
   }
 }
@@ -57,7 +56,8 @@
   font-size: 32px;
   line-height: calc(39 / 32);
   color: $white-color;
-  animation: move-left-visible 2s ease-in-out forwards;
+  opacity: 0;
+  animation: move-left-visible 2s ease-in-out 400ms forwards;
 
   @media screen and (max-width: $pre-desktop) {
     display: none;
@@ -67,6 +67,8 @@
 .hero-img {
   margin-right: 8px;
   display: block;
+  width: 145px;
+  height: 274px;
 
   @media screen and (min-width: $tablet) {
     margin-right: 20px;
@@ -136,7 +138,7 @@
   @media screen and (min-width: $desktop) {
     width: 166px;
     height: 166px;
-    animation: move-right-unvisible 1s ease-in-out forwards;
+    animation: move-right-invisible 1s ease-in-out forwards;
   }
 }
 
@@ -216,40 +218,43 @@
   border: none;
   outline: transparent;
   cursor: pointer;
-  animation: move-right-visible 2s ease-in-out forwards;
-  transition: transform 500ms ease-in-out;
-
-  &:hover,
-  &:focus {
-    transform: scale(1.2);
-  }
+  opacity: 0;
+  animation: move-right-visible 2000ms ease-in-out 400ms forwards;
+  // transition: transform 1s ease-in-out 100ms;
 
   @media screen and (max-width: $pre-desktop) {
     display: none;
   }
 }
 
+// .hero-btn--white:hover,
+// .hero-btn--white:focus {
+//   transform: scale(1.2);
+
+// }
+
+
+
 .btn_icon-text-white {
   fill: $white-color;
-  transition: transform 500ms ease-in-out;
+
 }
 
 .hero-btn--white:hover
   .btn_icon-text-white
   .hero-btn--white:focus
   .btn_icon-text-white {
-  transform: scale(1.2);
+    animation: scale 2s ease-in-out alternate-reverse;
 }
 
 .btn_icon-arrow-white {
-  fill: $white-color;
-  transition: transform 500ms ease-in-out;
+  fill: $white-color; 
+  transition: transform 1000ms ease-in-out 100ms;
 }
 
-.hero-btn--white:hover
-  .btn_icon-arrow-white
-  .hero-btn--white:focus
-  .btn_icon-arrow-white {
-  transform-origin: (50% 40%);
-  animation: rotate 2s ease-in-out 300ms forwards;
+.hero-btn--white:hover .btn_icon-arrow-white
+.hero-btn--white:focus .btn_icon-arrow-white {
+  transform-origin: (50% 60%);
+  transform: rotate(115%);
+  // animation: rotate 2s ease-in-out 300ms forwards;
 }
