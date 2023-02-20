@@ -17,18 +17,19 @@ ul {
 a {
   text-decoration: none;
   font-style: normal;
+  color: inherit;
 }
 button {
-    font-family: inherit;
-    cursor: pointer;
+  font-family: inherit;
+  cursor: pointer;
 }
 img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 textarea {
-    resize: none;
+  resize: none;
 }
 
 .vite-promo {
