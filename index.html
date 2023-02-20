@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"/>
     
     <script type="module" crossorigin src="/flower_studio/assets/index-719603c0.js"></script>
-    <link rel="stylesheet" href="/flower_studio/assets/index-9442e1a8.css">
+    <link rel="stylesheet" href="/flower_studio/assets/index-b9a49188.css">
   </head>
   <body>
     <!-- Header-->
@@ -270,7 +270,7 @@
 </section>
 
     <section class="delivery section" id="delivery">
-  <div class="container">
+  <div class="delivery__container container">
     <h2 class="delivery__title title">Delivery</h2>
     <ul class="delivery__list">
       <li class="delivery__item">
@@ -310,13 +310,14 @@
       class="delivery__img"
       src="../img/delivery/mobile/del_mob@1x.jpg"
       srcset="
-        ./img/delivery/Mobile/del_mob@1x.jpg,
-        ./img/delivery/Mobile/del_mob@2x.jpg,
-        ./img/delivery/Tablet/del_tab@1x.jpg,
-        ./img/delivery/Tablet/del_tab@2x.jpg,
-        ./img/delivery/Desktop/del_desk@1x.jpg,
-        ./img/delivery/Desktop/del_desk@2x.jpg
+        ./img/delivery/Mobile/del_mob@1x.jpg    320w,
+        ./img/delivery/Mobile/del_mob@2x.jpg    640w,
+        ./img/delivery/Tablet/del_tab@1x.jpg    768w,
+        ./img/delivery/Tablet/del_tab@2x.jpg   1536w,
+        ./img/delivery/Desktop/del_desk@1x.jpg 1280w,
+        ./img/delivery/Desktop/del_desk@2x.jpg 2560w
       "
+      sizes="(min-width: 1200px) 1280px, (min-width: 768px) 768px, (min-width: 480px) 320px"
       alt="Colorful flowers"
     />
   </div>
