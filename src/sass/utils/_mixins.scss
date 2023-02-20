@@ -22,8 +22,7 @@
 
 @mixin media-tablet-and-desktop() {
   // desktop and table
-  @media screen and ((min-width: $tablet) and (max-width: calc($desktop - 1px))),
-    screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     @content;
   }
 }
