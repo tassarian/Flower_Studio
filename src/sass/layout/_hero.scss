@@ -29,7 +29,6 @@
   font-size: 14px;
   line-height: calc(17 / 14);
   color: $black-color;
- 
 
   @media screen and (min-width: $tablet) {
     font-size: 24px;
@@ -40,7 +39,7 @@
       font-size: 32px;
       line-height: calc(39 / 32);
       margin-right: 110px;
-      animation: move-left-invisible 1s ease-in-out forwards;
+      animation: move-left-unvisible 1s ease-in-out forwards;
     }
   }
 }
@@ -58,6 +57,7 @@
   color: $white-color;
   opacity: 0;
   animation: move-left-visible 2s ease-in-out 400ms forwards;
+
 
   @media screen and (max-width: $pre-desktop) {
     display: none;
@@ -113,7 +113,7 @@
   border-radius: 50%;
   background-color: $white-color;
   overflow: hidden;
-  z-index: -1;
+  z-index: 100;
 }
 
 .hero-btn {
@@ -128,7 +128,6 @@
   padding: 0;
   margin: 0;
   border: none;
-  
 
   @media screen and (min-width: $tablet) {
     width: 145px;
@@ -174,7 +173,7 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translateX(-50%);
   z-index: 10;
 
   @media screen and (min-width: 768px) {
