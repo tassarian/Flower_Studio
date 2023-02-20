@@ -41,3 +41,9 @@
   top: 22px;
   right: 22px;
 }
+
+@include media-tablet-and-desktop {
+  .style_none {
+    display: none;
+  }
+}
