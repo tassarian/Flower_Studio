@@ -1,73 +1,60 @@
 <section class="hero container">
-  <div class="hero_content">  
-      <h2 class="hero_subtitle">flower<br />studio</h2>
-      <div class="hero-img">    
-        <img class="hero-img small"
-          srcset="
-          ../img/hero/mob/hero_145.png 145w,
-          ../img/hero/mob/hero_290.png 290w,
-          ../img/hero/tab/hero_390.png 390w,
-          ../img/hero/tab/hero_780.png 780w,
-          "
-          sizes="(min-width: 1280px) 542px, (min-width: 768px) 390px, (min-width: 480px) 145px 100vw"
-          src="../img/hero/tab/hero_390.png"
-          alt="Flower"
-          width="290"
-          height="274"
-          loading="lazy"/>
-          <img class="hero-img large"
-    srcset="
-    ../img/hero/desk/hero-full_1283.jpg 1283w,
-    ../img/hero/desk/hero-full_2566.jpg 2566w
-    "
-    sizes="(min-width: 1280px) 1283px, 100vw"
-    src="../img/hero/desk/hero-full_1283.jpg"
-    alt="Flower"
-    max-width="1283"
-    loading="lazy"/>
+  <div class="hero_content">
+    <h2 class="hero_subtitle">flower<br />studio</h2>
+    <div class="hero-img">
+      <img
+        class="hero-img small"
+        srcset="
+          ../img/hero/mobile/hero-145.png 145w,
+          ../img/hero/mobile/hero-290.png 290w,
+          ../img/hero/tablet/hero-390.png 390w,
+          ../img/hero/tablet/hero-780.png 780w
+        "
+        sizes="(min-width: 1280px) 542px, (min-width: 768px) 390px, (min-width: 480px) 145px 100vw"
+        src="../img/hero/tablet/hero-390.png"
+        alt="Flower"
+        width="290"
+        height="274"
+        loading="lazy"
+      />
+      <img
+        class="hero-img large"
+        srcset="
+          ../img/hero/desktop/hero-full-1283.jpg 1283w,
+          ../img/hero/desktop/hero-full-2566.jpg 2566w
+        "
+        sizes="(min-width: 1280px) 1283px, 100vw"
+        src="../img/hero/desktop/hero-full-1283.jpg"
+        alt="Flower"
+        max-width="1283"
+        loading="lazy"
+      />
+    </div>
+    <button class="btn hero-btn" type="button">
+      <svg class="btn_icon">
+        <use class="btn_icon-mob" href="../img/sprite.svg#icon-btn_mob"></use>
+        <use
+          class="btn_icon-tab"
+          href="../img/sprite.svg#icon-btn_tablet"
+        ></use>
+        <use class="btn_icon-text" href="../img/sprite.svg#icon-now-shop-desk"></use>
+        <use
+          class="btn_icon-arrow"
+          href="../img/sprite.svg#btn-icon-arrow"
+        ></use>
+      </svg>
+    </button>
   </div>
-  <button class="btn hero-btn" type="button">
+
+  <h2 class="hero_subtitle--white">flower<br />studio</h2>
+  <button class="btn hero-btn--white" type="button">
     <svg class="btn_icon">
-      <use class="btn_icon--text"  href="../img/sprite.svg#btn-icon-text"></use>
-      <use class="btn_icon--arrow"  href="../img/sprite.svg#btn-icon-arrow"></use>
-    </svg>
-  </button>
-  <img
-  class="hero-img"
-  srcset="
-    ../img/hero/mob/hero_145.png 145w,
-    ../img/hero/mob/hero_290.png 290w,
-    ../img/hero/tab/hero_390.png 390w,
-    ../img/hero/tab/hero_780.png 780w
-  "
-  sizes="(min-width: 1280px) 542px, (min-width: 768px) 390px, (min-width: 480px) 145px 100vw"
-  src="../img/hero/tab/hero_390.png"
-  alt="Flower"
-  width="145"
-  height="274"
-  loading="lazy"
-/>
-<button class="btn hero-btn" type="button">
-  <svg class="btn_icon">
-    <use class="btn_icon mob" href="../img/sprite.svg#icon-btn_mob"></use>
-    <use
-      class="btn_icon tab"
-      href="../img/sprite.svg#icon-btn_tablet"
+      <use class="btn_icon--text" href="../img/sprite.svg#btn-icon-text"></use>
+      <use
+        class="btn_icon--arrow"
+        href="../img/sprite.svg#btn-icon-arrow"
       ></use>
-      <use class="btn_icon desk" href="../img/sprite.svg#btn-icon-text
-      "></use>
     </svg>
   </button>
-</div>
-<h2 class="hero_subtitle--white">flower<br />studio</h2>
-<button class="btn hero-btn--white" type="button">
-  <svg class="btn_icon-circle" width="166" height="166">
-    <use  href="../img/sprite.svg#icon-now-shop-desk"></use>
-  </svg>
-  <svg class="btn_icon-arrow" width="60px">
-   <use  href="../img/sprite.svg#icon-btn_desk_arrow"></use>
-  </svg>
-</button>
   <h1 class="hero_title">ANEMONE</h1>
 </section>
-

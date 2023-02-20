@@ -47,6 +47,8 @@
   @include media-desktop() {
     display: inline-block;
     margin-right: auto;
+    fill: $white-color;
+    stroke: $white-color;
   }
 }
 
