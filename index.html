@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <title>Flower Studio</title>
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="144x144" href="/flower_studio/assets/apple-touch-icon-2b6ba020.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABdFBMVEXob1Tob1Tob1Tob1Tob1Tob1Tob1TnblPob1Tob1Tob1Tob1TnblPnb1TnblPob1Tob1Tob1Tob1TnblPpb1TqcFTSZU25WkW6WkXRZUyZTDo9Ih0+Ix08Ih2VSjnrcFXfa1HXZ07WZ07ealDmblPEX0iNRjZ0Oy58PzG1WEOWSjl2PC+DQjO+XEbnb1TMYktaMCZ3PC9+QDKKRTVZLyZoNiuXSjqCQTNJKCGfTjzhbFLVZk7scVXvclbwclaPRzcWERB7PjFKKCHQZEzZaE+xVkKkUT6mUj8bExKKRTatVUGrVECnUj8/JB2pUj/KYUpYLiVrNyyBQTNiMykaExFpNit4PTDCXkfqb1TscFWLRTZfMiioUj+bTTvuclaaTDtMKSHLYkrFX0hWLiUcFBJAJB6hTz3SZUybTDuRSDjcaVB5PTBTLCRnNSqAQTJOKiJPKyNdMSe0WEPTZU3dalDkbVLbaU/ga1HOY0vPZEzibFL///++7SDIAAAAEnRSTlMPgOjtkBf4+5nm9v7s+fyp+yEHA2gfAAAAAWJLR0R7T9K1/AAAAAd0SU1FB+cCEQoHLCX+nfIAAADzSURBVBjTY2BgZBKCA2YWVgZGNjBTWEQUCETYORg4oZJi4hIS4pJCXAzcEL6olLSMjKycqBCDsJCIPFCxkIKikqKSspAQg5CKqpq6hqaQkpa2jq6QkB6DiL6BoZaRjLGJqZm5haUIUIWVtY2tnb2Do4itraaTswiDsIiLq5u7o4enl7e3j6+fPIOIf0BgkE5wSKiGo6NjWHgEQ2RUtLC8XYxDbJy8vLyIkDCDfHxConJSckpqmlh6RqYK0NCs7Jzo3LzQtOT8gsIioDt4hFSK9UtKy0TKKyqrIoR4GVj4hEREwK4HUsLc/AysHGwI7wvwCwIACjMrBAni2I4AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDItMTdUMTA6MDc6NDQrMDA6MDA02S6TAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTAyLTE3VDEwOjA3OjQ0KzAwOjAwRYSWLwAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="/>
-    <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0xNDR4MTQ0LnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIxNDR4MTQ0IiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0KICAgIF0sCiAgICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsCiAgICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJkaXNwbGF5IjogInN0YW5kYWxvbmUiCn0K"/>
-    <link rel="mask-icon" href="/flower_studio/assets/safari-pinned-tab-6f1452ab.svg" color="#5bbad5"/>
-    <meta name="msapplication-TileColor" content="#da532c"/>
-    <meta name="theme-color" content="#ffffff"/>
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/flower_studio/assets/apple-touch-icon-2b6ba020.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,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"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABdFBMVEXob1Tob1Tob1Tob1Tob1Tob1Tob1TnblPob1Tob1Tob1Tob1TnblPnb1TnblPob1Tob1Tob1Tob1TnblPpb1TqcFTSZU25WkW6WkXRZUyZTDo9Ih0+Ix08Ih2VSjnrcFXfa1HXZ07WZ07ealDmblPEX0iNRjZ0Oy58PzG1WEOWSjl2PC+DQjO+XEbnb1TMYktaMCZ3PC9+QDKKRTVZLyZoNiuXSjqCQTNJKCGfTjzhbFLVZk7scVXvclbwclaPRzcWERB7PjFKKCHQZEzZaE+xVkKkUT6mUj8bExKKRTatVUGrVECnUj8/JB2pUj/KYUpYLiVrNyyBQTNiMykaExFpNit4PTDCXkfqb1TscFWLRTZfMiioUj+bTTvuclaaTDtMKSHLYkrFX0hWLiUcFBJAJB6hTz3SZUybTDuRSDjcaVB5PTBTLCRnNSqAQTJOKiJPKyNdMSe0WEPTZU3dalDkbVLbaU/ga1HOY0vPZEzibFL///++7SDIAAAAEnRSTlMPgOjtkBf4+5nm9v7s+fyp+yEHA2gfAAAAAWJLR0R7T9K1/AAAAAd0SU1FB+cCEQoHLCX+nfIAAADzSURBVBjTY2BgZBKCA2YWVgZGNjBTWEQUCETYORg4oZJi4hIS4pJCXAzcEL6olLSMjKycqBCDsJCIPFCxkIKikqKSspAQg5CKqpq6hqaQkpa2jq6QkB6DiL6BoZaRjLGJqZm5haUIUIWVtY2tnb2Do4itraaTswiDsIiLq5u7o4enl7e3j6+fPIOIf0BgkE5wSKiGo6NjWHgEQ2RUtLC8XYxDbJy8vLyIkDCDfHxConJSckpqmlh6RqYK0NCs7Jzo3LzQtOT8gsIioDt4hFSK9UtKy0TKKyqrIoR4GVj4hEREwK4HUsLc/AysHGwI7wvwCwIACjMrBAni2I4AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDItMTdUMTA6MDc6NDQrMDA6MDA02S6TAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTAyLTE3VDEwOjA3OjQ0KzAwOjAwRYSWLwAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="
+    />
+    <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0xNDR4MTQ0LnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIxNDR4MTQ0IiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0KICAgIF0sCiAgICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsCiAgICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJkaXNwbGF5IjogInN0YW5kYWxvbmUiCn0K" />
+    <link
+      rel="mask-icon"
+      href="/flower_studio/assets/safari-pinned-tab-6f1452ab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
     
     <script type="module" crossorigin src="/flower_studio/assets/index-719603c0.js"></script>
-    <link rel="stylesheet" href="/flower_studio/assets/index-b9a49188.css">
+    <link rel="stylesheet" href="/flower_studio/assets/index-769958c1.css">
   </head>
   <body>
     <!-- Header-->
@@ -326,71 +354,91 @@
     <section class="blog section" id="blog">
   <div class="blog__container container">
     <h2 class="title">Blog</h2>
-    <ul class="blog__list">
-      <li class="blog__item">
-        <img
-          class="blog__img"
-          srcset="
-            ../img/blog/mobile/img2-122.jpg  122w,
-            ../img/blog/mobile/img2-244.jpg  244w,
-            ../img/blog/tablet/img2-287.jpg  287w,
-            ../img/blog/tablet/img2-574.jpg  574w,
-            ../img/blog/desktop/img2-315.jpg 315w,
-            ../img/blog/desktop/img2-630.jpg 630w
-          "
-          sizes="(min-width: 1280px) 315px, (min-width: 768px) 287px, (min-width: 320px) 122px, 100vw"
-          src="../img/blog/mobile/img2-122.jpg"
-          alt="green branches"
-          loading="lazy"
-        />
-      </li>
-      <li class="blog__item">
-        <img
-          class="blog__img"
-          srcset="
-            ../img/blog/mobile/img1-153.jpg  153w,
-            ../img/blog/mobile/img1-306.jpg  306w,
-            ../img/blog/tablet/img1-344.jpg  344w,
-            ../img/blog/tablet/img1-688.jpg  688w,
-            ../img/blog/desktop/img1-390.jpg 390w,
-            ../img/blog/desktop/img1-780.jpg 780w
-          "
-          sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 153px, 100vw"
-          src="../img/blog/mobile/img1-153.jpg"
-          alt="pink calla"
-          loading="lazy"
-        />
-      </li>
-      <li class="blog__item">
-        <img
-          class="blog__img"
-          srcset="
-            ../img/blog/mobile/img3-122.jpg  122w,
-            ../img/blog/mobile/img3-244.jpg  244w,
-            ../img/blog/tablet/img3-287.jpg  287w,
-            ../img/blog/tablet/img3-574.jpg  574w,
-            ../img/blog/desktop/img3-315.jpg 315w,
-            ../img/blog/desktop/img3-630.jpg 630w
-          "
-          sizes="(min-width: 1280px) 315px, (min-width: 768px) 287px, (min-width: 320px) 122px, 100vw"
-          src="../img/blog/mobile/img3-122.jpg"
-          alt="blue irises"
-          loading="lazy"
-        />
-      </li>
-    </ul>
+    <div class="blog__list swiper">
+      <div class="swiper-wrapper">
+        <div class="blog__item swiper-slide">
+          <img
+            class="blog__img"
+            srcset="
+              ../img/blog/mobile/img1-153.jpg  153w,
+              ../img/blog/mobile/img1-306.jpg  306w,
+              ../img/blog/tablet/img1-344.jpg  344w,
+              ../img/blog/tablet/img1-688.jpg  688w,
+              ../img/blog/desktop/img1-390.jpg 390w,
+              ../img/blog/desktop/img1-780.jpg 780w
+            "
+            sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 153px, 100vw"
+            src="../img/blog/mobile/img1-153.jpg"
+            alt="pink calla"
+            loading="lazy"
+          />
+        </div>
+        <div class="blog__item swiper-slide">
+          <img
+            class="blog__img"
+            srcset="
+              ../img/blog/mobile/img4-153.jpg  153w,
+              ../img/blog/mobile/img4-306.jpg  306w,
+              ../img/blog/tablet/img4-344.jpg  344w,
+              ../img/blog/tablet/img4-688.jpg  688w,
+              ../img/blog/desktop/img4-390.jpg 390w,
+              ../img/blog/desktop/img4-780.jpg 780w
+            "
+            sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 153px, 100vw"
+            src="../img/blog/mobile/img4-153.jpg"
+            alt="white flowers"
+            loading="lazy"
+          />
+        </div>
+        <div class="blog__item swiper-slide">
+          <img
+            class="blog__img"
+            srcset="
+              ../img/blog/mobile/img5-153.jpg  153w,
+              ../img/blog/mobile/img5-306.jpg  306w,
+              ../img/blog/tablet/img5-344.jpg  344w,
+              ../img/blog/tablet/img5-688.jpg  688w,
+              ../img/blog/desktop/img5-390.jpg 390w,
+              ../img/blog/desktop/img5-780.jpg 780w
+            "
+            sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 153px, 100vw"
+            src="../img/blog/mobile/img5-153.jpg"
+            alt="bouquet"
+            loading="lazy"
+          />
+        </div>
+        <div class="blog__item swiper-slide">
+          <img
+            class="blog__img"
+            srcset="
+              ../img/blog/mobile/img6-153.jpg  153w,
+              ../img/blog/mobile/img6-306.jpg  306w,
+              ../img/blog/tablet/img6-344.jpg  344w,
+              ../img/blog/tablet/img6-688.jpg  688w,
+              ../img/blog/desktop/img6-390.jpg 390w,
+              ../img/blog/desktop/img6-780.jpg 780w
+            "
+            sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 153px, 100vw"
+            src="../img/blog/mobile/img6-153.jpg"
+            alt="orange roses"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <button class="blog__btn-left" type="button" aria-label="arrow left">
+        <svg class="blog__icon swiper-button-prev" width="41" height="27">
+          <use href="/flower_studio/assets/sprite-d17f7dc9.svg#icon-blog-left"></use>
+        </svg>
+      </button>
+      <button class="blog__btn-right" type="button" aria-label="arrow right">
+        <svg class="blog__icon swiper-button-next" width="41" height="27">
+          <use href="/flower_studio/assets/sprite-d17f7dc9.svg#icon-blog-right"></use>
+        </svg>
+      </button>
+    </div>
     <strong class="blog__text">Follow to our newsletter</strong>
-    <button class="blog__btn" type="button">Subscribe</button>
-    <button class="blog__btn-left" type="button" aria-label="arrow left">
-      <svg class="blog__icon" width="41" height="27">
-        <use href="../img/sprite.svg#icon-blog-left"></use>
-      </svg>
-    </button>
-    <button class="blog__btn-right" type="button" aria-label="arrow right">
-      <svg class="blog__icon" width="41" height="27">
-        <use href="../img/sprite.svg#icon-blog-right"></use>
-      </svg>
-    </button>
+    <button class="blog__btn button" type="button">Subscribe</button>
   </div>
 </section>
 
@@ -560,5 +608,7 @@
     
 
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
