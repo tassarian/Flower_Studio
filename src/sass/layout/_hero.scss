@@ -73,11 +73,26 @@
 
   @media screen and (min-width: $desktop) {
     margin-right: 86px;
+    // & .small {
+    //   display: none;
+    // }
   }
 }
 
 .hero-img .large {
   display: none;
+
+  // @media screen and (min-width: $desktop) {
+  //   display: block;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translateX(-50%) translateY(-50%);
+  //   z-index: 5;
+
+  //   max-width: 1280px;
+  //   height: auto;
+  // }
 }
 
 .hero-btn {
@@ -126,39 +141,6 @@
   }
 }
  
-
-  // @media screen and (min-width: $tablet) 
- 
-
-
-  // @media screen and (min-width: $desktop) 
-  
-
-
-
-
-.hero-btn--white {
-  position: absolute;
-  padding: 0;
-  width: 166px;
-  height: 166px;
-  top: 555px;
-  right: 144px;
-  bottom: 157px;
-  opacity: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  border: none;
-  outline: transparent;
-  cursor: pointer;
-
-  @media screen and (max-width: $desktop){
-  display: none;
-}
-}
-
 .hero_title {
   font-family: 'Montserrat';
   font-style: normal;
@@ -198,3 +180,59 @@
   }
 }
 
+  .hero-btn--white {
+    position: absolute;
+    padding: 0;
+    width: 166px;
+    height: 166px;
+    top: 555px;
+    right: 144px;
+    bottom: 157px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+    cursor: pointer;
+    transition: transform 500ms ease-in-out;
+  
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+  
+    @media screen and (max-width: $desktop){
+    display: none;
+  }
+  }
+
+  .btn_icon-text {
+    transition: transform 500ms ease-in-out;
+
+    .hero-btn--white:hover &
+    .hero-btn--white:focus & {
+        transform: scale(1.2);
+    }
+ 
+  }
+
+   .hero-btn--white:hover .btn_icon-arrow
+   .hero-btn--white:focus .btn_icon-arrow {
+    animation: rotate 1s ease-in-out forwards;
+   }
+
+   @keyframes rotate {
+
+    0% {
+      transform: rotate(0deg);
+    }
+
+   100% {
+      transform: rotate(115deg);
+  
+    }
+   }
+  
