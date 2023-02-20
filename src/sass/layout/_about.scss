@@ -1,0 +1,32 @@
+.about__wrapper {
+  @include media-tablet-and-desktop {
+    display: flex;
+    gap: 54px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @include media-desktop {
+    gap: 90px;
+  }
+}
+.about__text {
+  margin-bottom: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  vertical-align: middle;
+
+  color: $black-color;
+
+  @include media-tablet-and-desktop {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    margin-bottom: 0px;
+  }
+  @include media-desktop {
+    font-size: 22px;
+    line-height: calc(27 / 22);
+    margin-bottom: 0px;
+  }
+}
