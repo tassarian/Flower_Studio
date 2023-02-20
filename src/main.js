@@ -9,10 +9,14 @@
   const modalId = 'mobile_menu';
   const openMobileMenuId = 'open_mobile_menu';
   const closeMobileMenuId = 'close_mobile_menu';
+  const navigationLinkMobileClass = 'navigations__link_mb';
 
   const mobileMenu = document.getElementById(modalId);
   const openMobileMenu = document.getElementById(openMobileMenuId);
   const closeMobileMenu = document.getElementById(closeMobileMenuId);
+  const navigationLinks = Array.from(
+    document.getElementsByClassName(navigationLinkMobileClass)
+  );
 
   const closeMenu = () => {
     mobileMenu.classList.remove(isOpenClass);
@@ -36,5 +40,10 @@
 
   openMobileMenu.addEventListener('click', openMenu);
   closeMobileMenu.addEventListener('click', closeMenu);
+
+  navigationLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
   window.addEventListener('resize', onResize);
 })();
