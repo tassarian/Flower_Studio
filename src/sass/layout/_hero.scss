@@ -168,6 +168,7 @@
   position: absolute;
   bottom: 0;
   left: 50%;
+  transform: translateX(-50%);
   z-index: 10;
 
   @media screen and (min-width: 768px) {
@@ -198,6 +199,7 @@
 
 .hero-btn--white {
   position: absolute;
+  display: block;
   padding: 0;
   width: 166px;
   height: 166px;
@@ -239,7 +241,7 @@
   .btn_icon-arrow-white
   .hero-btn--white:focus
   .btn_icon-arrow-white {
-  transform: rotate(115deg);
+  // transform: rotate(115deg);
   transform-origin: 50% 40%;
-  // animation: rotate 1s ease-in forwards;
+  animation: rotate 1s ease-in forwards;
 }
