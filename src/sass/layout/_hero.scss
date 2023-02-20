@@ -29,6 +29,7 @@
   font-size: 14px;
   line-height: calc(17 / 14);
   color: #000000;
+  // transition: opacity 1s ease-in-out;
 
   @media screen and (min-width: $tablet) {
     font-size: 24px;
@@ -39,6 +40,8 @@
       font-size: 32px;
       line-height: calc(39 / 32);
       margin-right: 110px;
+      // opacity: 0;
+      animation: move-left-unvisible 1s ease-in-out forwards;
     }
   }
 }
@@ -53,8 +56,8 @@
   font-weight: 400;
   font-size: 32px;
   line-height: calc(39 / 32);
-  color: black;
-  opacity: 1;
+  color: $white-color;
+  animation: move-left-visible 2s ease-in-out forwards;
 
   @media screen and (max-width: $desktop){
     display: none;
@@ -73,27 +76,43 @@
 
   @media screen and (min-width: $desktop) {
     margin-right: 86px;
-    // & .small {
-    //   display: none;
-    // }
+    & .small {
+      display: none;
+    }
   }
 }
 
-.hero-img .large {
+.hero-img.large {
   display: none;
 
-  // @media screen and (min-width: $desktop) {
-  //   display: block;
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translateX(-50%) translateY(-50%);
-  //   z-index: 5;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -5;
 
-  //   max-width: 1280px;
-  //   height: auto;
-  // }
+    max-width: 1280px;
+    height: auto;
+  }
 }
+
+.hero-img.large::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 145px;
+  height: 270px;
+  border-radius: 50%;
+  background-color: $white-color;
+  overflow: hidden;
+  z-index: -1;
+}
+
 
 .hero-btn {
   display: flex;
@@ -107,6 +126,7 @@
   padding: 0;
   margin: 0;
   border: none;
+  // transition: opacity 1s ease-in-out;
 
 @media screen and (min-width: $tablet) {
         width: 145px;
@@ -116,6 +136,7 @@
 @media screen and (min-width: $desktop) {
     width: 166px;
     height: 166px;
+    animation: move-right-unvisible 1s ease-in-out forwards;
   }
 }
 
@@ -147,25 +168,26 @@
   font-weight: 400;
   font-size: 52px;
   line-height: calc(63 / 52);
-  color: #000000;
+  color: $black-color;
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 0);
   z-index: 10;
 
   @media screen and (min-width: 768px) {
     font-size: 120px;
     line-height: calc(146 / 120);
-    color: #000000;
+    color: $black-color;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 160px;
     line-height: calc(195 / 160);
-    // bottom: 50%;
-    // left: 50%;
-    // transform: translateY(-50%), translateX(-50%);
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation: move-up 2s ease-in-out 200ms  forwards;
+
 
 
     &::after {
@@ -176,6 +198,8 @@
       position: absolute;
       top: 20px;
       right: 20px;
+      animation: bgcolor 2s ease-in-out 200ms forwards;
+      
     }
   }
 }
@@ -188,7 +212,6 @@
     top: 555px;
     right: 144px;
     bottom: 157px;
-    opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,43 +219,36 @@
     border: none;
     outline: transparent;
     cursor: pointer;
-    transition: transform 500ms ease-in-out;
-  
+    animation: move-right-visible 2s ease-in-out forwards;
 
-    &:hover,
-    &:focus {
-      transform: scale(1.2);
-    }
+    
   
     @media screen and (max-width: $desktop){
     display: none;
   }
+}
+
+  .btn_icon-text-white {
+    fill: $white-color;
+    transition: transform 500ms ease-in-out;
   }
 
-  .btn_icon-text {
-    transition: transform 500ms ease-in-out;
-
-    .hero-btn--white:hover &
-    .hero-btn--white:focus & {
+    .hero-btn--white:hover .btn_icon-text-white
+    .hero-btn--white:focus .btn_icon-text-white {
         transform: scale(1.2);
     }
  
+  
+
+  .btn_icon-arrow-white {
+    fill: $white-color;
+    transition: transform 500ms ease-in-out;
   }
 
-   .hero-btn--white:hover .btn_icon-arrow
-   .hero-btn--white:focus .btn_icon-arrow {
-    animation: rotate 1s ease-in-out forwards;
-   }
-
-   @keyframes rotate {
-
-    0% {
-      transform: rotate(0deg);
-    }
-
-   100% {
-      transform: rotate(115deg);
-  
-    }
+   .hero-btn--white:hover .btn_icon-arrow-white
+   .hero-btn--white:focus .btn_icon-arrow-white {
+    transform: rotate(115deg);
+    transform-origin: 50% 40%;
+    // animation: rotate 1s ease-in forwards;
    }
   
