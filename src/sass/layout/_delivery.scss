@@ -1,9 +1,15 @@
+.delivery__container{
+    padding: 0;
+}
+
 .delivery__title {
+    padding: 0 16px;
     margin-top: 0;
     margin-bottom: 32px;
 
     @media screen and (min-width: $tablet){
         margin-bottom: 60px;
+        padding: 0 24px;
     }
 
     @media screen and (min-width: $desktop){
@@ -16,6 +22,11 @@
     flex-direction: column;
     margin-top: 0;
     margin-bottom: 0;
+    padding: 0 16px;
+
+    @media screen and (min-width: $tablet) {
+        padding: 0 24px;
+    }
 }
 
 .delivery__item {
