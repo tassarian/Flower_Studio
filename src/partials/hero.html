@@ -1,16 +1,16 @@
 <section id="anchor1" class="hero container">
   <img
-    class="hero-img large"
-    srcset="
-      ./img/hero/desktop/hero-full-1283.jpg 1283w,
-      ./img/hero/desktop/hero-full-2566.jpg 2566w
-    "
-    sizes="(min-width: 1280px) 1283px, 100vw"
-    src="./img/hero/desktop/hero-full-1283.jpg"
-    alt="Flower"
-    max-width="1283"
-    loading="lazy"
-  />
+  class="hero-img large"
+  srcset="
+    ./img/hero/desktop/hero-full-1283.jpg 1283w,
+    ./img/hero/desktop/hero-full-2566.jpg 2566w
+  "
+  sizes="(min-width: 1280px) 1283px, 100vw"
+  src="./img/hero/desktop/hero-full-1283.jpg"
+  alt="Flower"
+  width="1280"
+  loading="lazy"
+/>
   <div class="hero_content">
     <h2 class="hero_subtitle">flower<br />studio</h2>
     <div class="hero-img">
@@ -22,7 +22,7 @@
           ./img/hero/tablet/hero-390.png 390w,
           ./img/hero/tablet/hero-780.png 780w
         "
-        sizes="(min-width: 1280px) 542px, (min-width: 768px) 390px, (min-width: 480px) 145px 100vw"
+        sizes="(min-width: 768px) 390px, (min-width: 480px) 145px 100vw"
         src="./img/hero/tablet/hero-390.png"
         alt="Flower"
         width="290"
@@ -30,7 +30,7 @@
         loading="lazy"
       />
     </div>
-    <button class="btn hero-btn" type="button">
+    <button data-modal-open class="btn hero-btn" type="button">
       <svg class="btn_icon">
         <use class="btn_icon-mob" href="./img/sprite.svg#icon-btn_mob"></use>
         <use class="btn_icon-tab" href="./img/sprite.svg#icon-btn_tablet"></use>
@@ -46,7 +46,7 @@
     </button>
   </div>
   <h2 class="hero_subtitle--white">flower<br />studio</h2>
-  <button class="btn hero-btn--white" type="button">
+  <button data-modal-open class="btn hero-btn--white" type="button">
     <svg class="btn_icon">
       <use
         class="btn_icon-text-white"
