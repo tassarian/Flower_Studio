@@ -126,52 +126,61 @@
   }
 }
 
-.header_and_hero_container {
-  display: contents;
-
-  #anemone_link:after {
-    content: 'Anemone Anemone';
-    width: 160px;
-    height: 116px;
-    display: flex;
-    align-items: center;
-    padding: 26px;
-    line-height: 40px;
-    border-radius: 10px;
-    border: 2px dashed #9747ff;
-    border-radius: 5px;
-    transform: translateY(-50px) translateX(-29px);
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .navigations__item {
-    transition: color 2s ease;
-  }
-
-  &:hover {
-    .navigations__item {
-      color: $white-color;
-      transition: color 2s ease;
-    }
-
-    #anemone_link {
-      animation: anemone_link_hover_in 2s ease;
-    }
+@include media-desktop {
+  .header_and_hero_container {
+    display: contents;
 
     #anemone_link:after {
-      animation: anemone_link_hover_after_in 2s ease;
+      content: 'Anemone Anemone';
+      width: 160px;
+      height: 116px;
+      display: flex;
+      align-items: center;
+      padding: 26px;
+      line-height: 40px;
+      border-radius: 10px;
+      border: 2px dashed #9747ff;
+      border-radius: 5px;
+      transform: translateY(-50px) translateX(-29px);
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
     }
-  }
 
-  &:not(:hover) {
-    #anemone_link {
-      animation: anemone_link_hover_out 2s ease;
+    .navigations__item,
+    .icon-logo-mobile,
+    .icon-tel-mobile {
+      transition: color fill 2s ease;
     }
 
-    #anemone_link:after {
-      animation: anemone_link_hover_after_out 2s ease;
+    &:hover {
+      .navigations__item {
+        color: $white-color;
+        transition: color 2s ease;
+      }
+
+      #anemone_link {
+        animation: anemone_link_hover_in 2s ease;
+      }
+
+      #anemone_link:after {
+        animation: anemone_link_hover_after_in 2s ease;
+      }
+
+      .icon-logo-mobile,
+      .icon-tel-mobile {
+        fill: $white-color;
+      }
+    }
+
+    &:not(:hover) {
+      #anemone_link {
+        animation: anemone_link_hover_out 2s ease;
+      }
+
+      #anemone_link:after {
+        animation: anemone_link_hover_after_out 2s ease;
+      }
     }
   }
 }
