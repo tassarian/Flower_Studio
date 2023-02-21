@@ -25,8 +25,8 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" />
   
-  <script type="module" crossorigin src="/flower_studio/assets/index-3b9c2f52.js"></script>
-  <link rel="stylesheet" href="/flower_studio/assets/index-b45b4630.css">
+  <script type="module" crossorigin src="/flower_studio/assets/index-8961bc88.js"></script>
+  <link rel="stylesheet" href="/flower_studio/assets/index-e016be37.css">
 </head>
 
 <body>
@@ -475,7 +475,7 @@
     </button>
     <form class="modal__form">
       <div class="modal__contact" data-modal-contact>
-        <strong class="modal__title">Contack us</strong>
+        <strong class="modal__title">Contackt us</strong>
         <p class="paragraf">
           If you have any additional questions or you want to clarify
           something before you make an order please fill in your contact
@@ -483,32 +483,27 @@
         </p>
         <label class="modal__label">
           <span class="modal__comment">Name</span>
-          <input
+          <input class="data js-inputname"
             type="text"
             name="Your name"
             pattern="[a-z]{1,25}"
-            title="Username should only contain lowercase letters. e.g. john"
+            title="Username should only contain lowercase letters. e.g. john" placeholder="Your name"
           />
         </label>
         <label class="modal__label">
           <span class="modal__comment">Email</span>
-          <input type="email" name="Your Email" pattern="^\S+@\S+\.\S+$" />
+          <input class="data js-inputemail" type="email" name="Your Email" pattern="^\S+@\S+\.\S+$" placeholder="Your email" />
         </label>
-        <button class="modal__button-send" type="button" data-modal-send>
+        <button disabled class="modal__button-send js-toggledisabled" type="button" data-modal-send>
           Send
         </button>
       </div>
       <div class="modal__thanks" data-modal-thanks>
         <img
           class="modal2__picture"
-          srcset="
-            ./images/thank_mob@1x.png  188w,
-            ./images/thank_mob@2x.png  376w,
-            ./images/thank_tabl@2x.png 367w,
-            ./images/thank_tabl@2x.png 734w
-          "
+          srcset="/flower_studio/assets/thank_mob@1x-fd32c808.png 188w, /flower_studio/assets/thank_mob@2x-9bb10b27.png 376w, /flower_studio/assets/thank_tabl@2x-4e1fcab1.png 367w, /flower_studio/assets/thank_tabl@2x-4e1fcab1.png 734w"
           sizes="(min-width: 1280px) 367px, (min-width: 768px) 367px, (min-width: 320px) 188px, 100vw"
-          src="./images/thank_mob@1x.png"
+          src="/flower_studio/assets/thank_mob@1x-fd32c808.png"
           alt=""
           width="188"
           height="142"
