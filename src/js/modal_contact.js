@@ -24,7 +24,7 @@
 function toggleModalbtnactiv(){
   let name=refs.modalinputname.value;
   let email=refs.modalinputemail.value;
-  if(name==""|| email=="" ){
+  if(name=="" || email=="" ){
 refs.modalmodelBtndisabled.disabled=true
   }else{
     refs.modalmodelBtndisabled.disabled=false
