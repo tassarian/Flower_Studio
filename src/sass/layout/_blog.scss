@@ -104,13 +104,3 @@
     margin: 0 auto;
 }
 
-.swiper-slide {
-    transform: scale(0.8);
-    transition: transform $time-dur $time-func;
-}
-
-.swiper-slide-active {
-    transform: scale(1);
-    transition: transform $time-dur $time-func;
-}
-
