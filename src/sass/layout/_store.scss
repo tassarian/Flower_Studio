@@ -64,34 +64,33 @@
        }
 }
 
-&__button{
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 208px;
-    height: 44px;
-    padding: 10px 35px;
-    background-color:$main-btn-color;
-    color: $white-color;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    line-height: 1.2;
-    display: flex;
-    justify-content: center;
-  align-items: center;
-    border-radius: 38px;
-    border: 0;
-    cursor: pointer;
-    @media screen and (min-width: 768px){
-        min-width: 280px;
-        height: 64px;
+// &__button{
+//     margin-left: auto;
+//     margin-right: auto;
+//     min-width: 208px;
+//     height: 44px;
+//     padding: 10px 35px;
+//     background-color:$main-btn-color;
+//     color: $white-color;
+//     font-size: 20px;
+//     font-weight: 500;
+//     letter-spacing: 0.06em;
+//     line-height: 1.2;
+//     display: flex;
+//     justify-content: center;
+//   align-items: center;
+//     border-radius: 38px;
+//     border: 0;
+//     cursor: pointer;
+//     @media screen and (min-width: 768px){
+//         min-width: 280px;
+//         height: 64px;
     
-       }
-       @media screen and (min-width: 1280px){
-        font-size: 28px;
-        line-height: 0.85;
-       }
+//        }
+//        @media screen and (min-width: 1280px){
+//         font-size: 28px;
+//         line-height: 0.85;
+//        }
 
 
-}
 }
