@@ -11,9 +11,6 @@
   const closeMobileMenuId = 'close_mobile_menu';
   const navigationLinkMobileClass = 'navigations__link_mb';
 
-  const headerAndHeroContainer = document.getElementById(
-    'header_and_hero_container'
-  );
   const mobileMenu = document.getElementById(modalId);
   const openMobileMenu = document.getElementById(openMobileMenuId);
   const closeMobileMenu = document.getElementById(closeMobileMenuId);
@@ -50,10 +47,21 @@
 
   window.addEventListener('resize', onResize);
 
-  headerAndHeroContainer.addEventListener('mouseover', () => {
-    headerAndHeroContainer.classList.add('header_and_hero_container');
+  const headerAndHeroContainer = document.getElementById(
+    'header_and_hero_container'
+  );
 
-    // remove the event listener
-    headerAndHeroContainer.removeEventListener('hover');
+  const heroImage = document.querySelector('.hero.container');
+
+  heroImage.addEventListener('mouseover', () => {
+    headerAndHeroContainer.classList.add('header_and_hero_container_active');
+    headerAndHeroContainer.classList.remove(
+      'header_and_hero_container_inactive'
+    );
+  });
+
+  heroImage.addEventListener('mouseout', () => {
+    headerAndHeroContainer.classList.remove('header_and_hero_container_active');
+    headerAndHeroContainer.classList.add('header_and_hero_container_inactive');
   });
 })();

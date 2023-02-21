@@ -41,7 +41,7 @@
       margin-right: 110px;
       transition: transform 2s ease-in-out 100ms, opacity 1s ease-in-out 100ms;
 
-      .header_and_hero_container:hover .hero & {
+      .header_and_hero_container_active:hover .hero & {
         transform: translate(-20px, -20px);
         opacity: 0;
       }
@@ -63,7 +63,7 @@
   opacity: 0;
   transition: transform 2s ease-in-out 100ms, opacity 2s ease-in-out 100ms;
 
-  .header_and_hero_container:hover .hero & {
+  .header_and_hero_container_active:hover .hero & {
     transform: translate(20px, 20px);
     opacity: 1;
   }
@@ -112,7 +112,7 @@
   }
 }
 
-.header_and_hero_container:hover .hero .hero-img.large {
+.header_and_hero_container_active:hover .hero .hero-img.large {
   clip-path: inset(0 round 0);
 }
 
@@ -139,7 +139,7 @@
     height: 166px;
     transition: transform 2s ease-in-out 100ms, opacity 1s ease-in-out 100ms;
 
-    .header_and_hero_container:hover .hero & {
+    .header_and_hero_container_active:hover .hero & {
       transform: translate(20px, -20px);
       opacity: 0;
     }
@@ -194,7 +194,7 @@
     transform: translate(-50%, 0);
     transition: transform 2s ease-in-out, color 2s ease-in-out;
 
-    .header_and_hero_container:hover .hero & {
+    .header_and_hero_container_active:hover .hero & {
       transform: translate(-50%, -180%);
       color: $white-color;
     }
@@ -229,7 +229,7 @@
   opacity: 0;
   transition: transform 2s ease-in-out 100ms, opacity 2s ease-in-out 100ms;
 
-  .header_and_hero_container:hover .hero & {
+  .header_and_hero_container_active:hover .hero & {
     transform: translate(-20px, 20px);
     opacity: 1;
   }
