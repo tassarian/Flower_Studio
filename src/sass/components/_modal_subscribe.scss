@@ -1,241 +1,244 @@
 /* Modal and backdrop */
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 
-    background-color: $black-color-30;
-    opacity: 1;
-    visibility: visible;
+  background-color: $black-color-30;
+  opacity: 1;
+  visibility: visible;
 
-    transition: opacity $time-dur, $time-func;
+  transition: opacity $time-dur, $time-func;
+  z-index: 999;
 }
 
 .backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal.subscribe {
-    position: absolute;
-    min-height: 380px;
-    max-width: 272px;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    padding: 0px 16px 28px;
-    background-color: $white-color;
+  position: absolute;
+  min-height: 380px;
+  max-width: 272px;
+  width: 100%;
+  // top: 50%;
+  // left: 50%;
+  // transform: translateX(-50%) translateY(-50%);
+  padding: 0px 16px 28px;
+  background-color: $white-color;
 
-    transition: opacity 150ms ease-in 400ms, transform 400ms ease;
+  transition: opacity 150ms ease-in 400ms, transform 400ms ease;
 
-    @media screen and (min-width: $tablet) {
-        min-height: 644px;
-        max-width: 588px;
-        padding: 0px 118px 40px;
-    }
+  @media screen and (min-width: $tablet) {
+    min-height: 644px;
+    max-width: 588px;
+    padding: 0px 118px 40px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        min-height: 528px;
-        max-width: 860px;
-        padding: 0 40px 0 0;
-    }
+  @media screen and (min-width: $desktop) {
+    min-height: 528px;
+    max-width: 860px;
+    padding: 0 40px 0 0;
+  }
 }
 
 .backdrop.is-hidden .modal {
-    opacity: 0;
-    transform: translateX(-50%) translateY(-50%) scale(0.1);
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%) scale(0.1);
 }
 
 .subscribe__close {
-    position: absolute;
-    top: 14px;
-    right: 14px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    width: 18px;
-    height: 18px;
+  width: 18px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  @media screen and (min-width: $tablet) {
+    width: 24px;
+    height: 24px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        width: 24px;
-        height: 24px;
-    }
+  background-color: transparent;
+  stroke: $black-color;
 
-    background-color: transparent;
-    stroke: $black-color;
-
-    &:hover,
-    &__close:focus {
-        stroke: $hover-btn-color;
-    }
+  &:hover,
+  &__close:focus {
+    stroke: $hover-btn-color;
+  }
 }
 
 .subscribe {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    @media screen and (min-width: $desktop) {
-        flex-direction: row;
-    }
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
 }
 
 .subscribe__photo__wrapper {
-    @media screen and (max-width: $pre-desktop) {
-        flex-grow: 1;
-    }
+  @media screen and (max-width: $pre-desktop) {
+    flex-grow: 1;
+  }
 }
 
 .subscribe__photo {
-    @media screen and (max-width: $pre-desktop) {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
+  @media screen and (max-width: $pre-desktop) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }
 
 .subscribe__info-wrapper {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+  }
+
+  .subscribe__form {
     @media screen and (min-width: $desktop) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 40px;
+      width: 100%;
     }
+  }
 
-    .subscribe__form {
-        @media screen and (min-width: $desktop) {
-            width: 100%;
-        }
+  .subscribe__title {
+    display: block;
+
+    margin-bottom: 14px;
+    text-align: center;
+
+    font-weight: 600;
+    font-size: 19px;
+    line-height: calc(23 / 19);
+
+    color: $black-color;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 24px;
+      font-size: 28px;
+      line-height: calc(34 / 28);
     }
+  }
 
-    .subscribe__title {
-        display: block;
-
-        margin-bottom: 14px;
-        text-align: center;
-
-        font-weight: 600;
-        font-size: 19px;
-        line-height: calc(23 / 19);
-
-        color: $black-color;
-
-        @media screen and (min-width: $tablet) {
-            margin-bottom: 24px;
-            font-size: 28px;
-            line-height: calc(34 / 28);
-        }
-    }
-
-    .subscribe__text {
-        display: block;
-        width: 100%;
-        margin-bottom: 18px;
-        text-align: center;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: calc(16 / 12);
-
-        color: $main-grey-color;
-
-        @media screen and (min-width: $tablet) {
-            margin-bottom: 32px;
-            max-width: 336px;
-            font-size: 16px;
-            line-height: calc(21 / 16);
-        }
-    }
-}
-
-.subscribe__form__comment {
+  .subscribe__text {
     display: block;
     width: 100%;
-    margin-bottom: 8px;
-
-    font-weight: 500;
-    font-size: 10px;
-    line-height: calc(12 / 10);
+    margin-bottom: 18px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(16 / 12);
 
     color: $main-grey-color;
 
     @media screen and (min-width: $tablet) {
-        font-size: 14px;
-        line-height: calc(17 / 14);
+      margin-bottom: 32px;
+      max-width: 336px;
+      font-size: 16px;
+      line-height: calc(21 / 16);
     }
+  }
 }
 
-.subscribe__form__input {
-    display: block;
-    width: 100%;
-    height: 35px;
-    margin-bottom: 18px;
-    border: 1px solid $secondary-gray-color;
-    border-radius: 4px;
-    outline: none;
+.subscribe__form__comment {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 10px;
+  line-height: calc(12 / 10);
+
+  color: $main-grey-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
+
+input.subscribe__form__input {
+  display: block;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 18px;
+  border: 1px solid $secondary-gray-color;
+  border-radius: 4px;
+  outline: none;
+
+  @media screen and (min-width: $tablet) {
+    height: 49px;
+    margin-bottom: 28px;
+  }
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+
+    color: $black-color-30;
 
     @media screen and (min-width: $tablet) {
-        height: 49px;
-        margin-bottom: 28px;
+      margin-bottom: 28px;
+      font-size: 14px;
+      line-height: calc(17 / 14);
     }
-
-    &::placeholder {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: calc(15 / 12);
-
-        color: $black-color-30;
-
-        @media screen and (min-width: $tablet) {
-            margin-bottom: 28px;
-            font-size: 14px;
-            line-height: calc(17 / 14);
-        }
-    }
+  }
 }
 
 .subscribe__form__input:not(:placeholder-shown):required:invalid {
-    border-color: #ff0000;
+  border-color: #ff0000;
 }
 
 .subscribe__btn {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 37px;
-    border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 37px;
+  border-radius: 8px;
+  border: none;
 
-    font-weight: 600;
-    font-size: 14px;
-    line-height: calc(17 / 14);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
 
-    color: $white-color;
-    background-color: $main-btn-color;
+  color: $white-color;
+  background-color: $main-btn-color;
 
-    @media screen and (min-width: $tablet) {
-        height: 50px;
+  @media screen and (min-width: $tablet) {
+    height: 50px;
 
-        font-size: 18px;
-        line-height: calc(22 / 18);
-    }
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
 
-    @include transition("background");
+  @include transition('background');
 
-    &:hover,
-    &:active {
-        background: $hover-btn-color;
-    }
+  &:hover,
+  &:active {
+    background: $hover-btn-color;
+  }
 
-    &:focus {
-        background: $focus-btn-color;
-        box-shadow: 0px 4px 16px $focus-btn-color-20;
-    }
+  &:focus {
+    background: $focus-btn-color;
+    box-shadow: 0px 4px 16px $focus-btn-color-20;
+  }
 }

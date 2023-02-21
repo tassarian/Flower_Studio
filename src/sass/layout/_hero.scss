@@ -30,7 +30,6 @@
   font-size: 14px;
   line-height: calc(17 / 14);
   color: $black-color;
- 
 
   @media screen and (min-width: $tablet) {
     font-size: 24px;
@@ -74,6 +73,7 @@
     transform: translate(20px, 20px);
     opacity: 1;
   }
+
 
   @media screen and (max-width: $pre-desktop) {
     display: none;
@@ -120,6 +120,7 @@
 }
   
 
+
 .hero:hover .hero-img.large {
   clip-path: inset(0 round 0);
 }
@@ -137,7 +138,6 @@
   padding: 0;
   margin: 0;
   border: none;
-  
 
   @media screen and (min-width: $tablet) {
     width: 145px;
@@ -190,7 +190,7 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translateX(-50%);
   z-index: 10;
 
   @media screen and (min-width: 768px) {

@@ -1,3 +1,6 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
 .footer {
   background-color: $black-color;
   color: $white-color;
@@ -44,11 +47,19 @@
 
 .footer__logo {
   display: none;
+  outline: 0;
+  @include transition('stroke, fill');
   @include media-desktop() {
     display: inline-block;
     margin-right: auto;
     fill: $white-color;
     stroke: $white-color;
+
+    &:focus,
+    &:hover {
+      stroke: $hover-btn-color;
+      fill: $hover-btn-color;
+    }
   }
 }
 
@@ -70,11 +81,21 @@
 }
 
 .footer__link {
+  @include media-tablet-and-desktop {
+    &:hover,
+    &:focus {
+      color: $hover-btn-color;
+    }
+  }
   display: flex;
+
+  outline: 0;
 
   margin-bottom: 12px;
 
   color: $white-color;
+
+  @include transition('color');
 }
 
 .footer__work-time {
@@ -166,6 +187,13 @@
 }
 
 .footer__social-link {
+  &:focus .footer__social-icon,
+  &:hover .footer__social-icon {
+    stroke: $hover-btn-color;
+  }
+
+  outline: 0;
+
   display: inline-block;
   width: 28px;
   height: 28px;
@@ -173,6 +201,6 @@
 
 .footer__social-icon {
   fill: transparent;
-
+  @include transition('stroke');
   stroke: $white-color;
 }

@@ -27,6 +27,10 @@
     @media screen and (min-width: $tablet) {
         padding: 0 24px;
     }
+
+    @media screen and (min-width: $desktop) {
+        padding: 0 96px;
+    }
 }
 
 .delivery__item {
