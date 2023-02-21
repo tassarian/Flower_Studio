@@ -14,16 +14,13 @@ new Swiper(".blog__list", {
         768: {
             spaceBetween: 32,
         }
-    }
+    },
 
-});
-
-var swiperContainer = document.querySelector('.swiper-wrapper');
-swiperContainer.addEventListener('transitionEnd', function() { 
-  var activeSlide = swiperContainer.querySelector('.swiper-slide-active'); 
-  activeSlide.style.transform = 'scale(1)'; 
-});
-swiperContainer.addEventListener('transitionStart', function() { 
-  var prevSlide = swiperContainer.querySelector('.swiper-slide-prev'); 
-  prevSlide.style.transform = 'scale(0.8)'; 
+    effect: 'coverflow',
+    coverflowEffect: {
+    rotate: 0,
+    slideShadows: false,
+    depth: 50,
+    scale: 0.8,
+  },
 });
