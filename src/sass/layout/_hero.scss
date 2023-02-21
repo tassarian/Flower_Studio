@@ -7,9 +7,8 @@
   @media screen and (min-width: $tablet) {
     padding-top: 119px;
     padding-bottom: 94px;
-
   }
-  
+
   @media screen and (min-width: $desktop) {
     padding-top: 149px;
     padding-bottom: 93px;
@@ -42,14 +41,10 @@
       margin-right: 110px;
       transition: transform 2s ease-in-out 100ms, opacity 1s ease-in-out 100ms;
 
-    .hero:hover & {
-      transform: translate(-20px, -20px);
-      opacity: 0;
-      
-    }
-
- 
-
+      .header_and_hero_container_active:hover .hero & {
+        transform: translate(-20px, -20px);
+        opacity: 0;
+      }
     }
   }
 }
@@ -68,12 +63,10 @@
   opacity: 0;
   transition: transform 2s ease-in-out 100ms, opacity 2s ease-in-out 100ms;
 
-
-  .hero:hover & {
+  .header_and_hero_container_active:hover .hero & {
     transform: translate(20px, 20px);
     opacity: 1;
   }
-
 
   @media screen and (max-width: $pre-desktop) {
     display: none;
@@ -118,13 +111,10 @@
     transition: 2s;
   }
 }
-  
 
-
-.hero:hover .hero-img.large {
+.header_and_hero_container_active:hover .hero .hero-img.large {
   clip-path: inset(0 round 0);
 }
-
 
 .hero-btn {
   display: flex;
@@ -149,12 +139,10 @@
     height: 166px;
     transition: transform 2s ease-in-out 100ms, opacity 1s ease-in-out 100ms;
 
-    .hero:hover & {
+    .header_and_hero_container_active:hover .hero & {
       transform: translate(20px, -20px);
       opacity: 0;
-      
     }
-
   }
 }
 
@@ -205,14 +193,13 @@
     left: 50%;
     transform: translate(-50%, 0);
     transition: transform 2s ease-in-out, color 2s ease-in-out;
-    
-    .hero:hover & {
+
+    .header_and_hero_container_active:hover .hero & {
       transform: translate(-50%, -180%);
       color: $white-color;
     }
 
-
-     &::after {
+    &::after {
       content: '';
       width: 60px;
       height: 8px;
@@ -220,10 +207,9 @@
       position: absolute;
       top: 20px;
       right: 20px;
-      }
+    }
+  }
 }
-}
-
 
 .hero-btn--white {
   position: absolute;
@@ -243,17 +229,15 @@
   opacity: 0;
   transition: transform 2s ease-in-out 100ms, opacity 2s ease-in-out 100ms;
 
-
-  .hero:hover & {
+  .header_and_hero_container_active:hover .hero & {
     transform: translate(-20px, 20px);
     opacity: 1;
   }
 
-   @media screen and (max-width: $pre-desktop) {
+  @media screen and (max-width: $pre-desktop) {
     display: none;
   }
 }
-
 
 .btn_icon-text-white {
   fill: $white-color;
@@ -276,4 +260,3 @@
 .hero-btn--white:focus .btn_icon-arrow-white {
   transform: rotate(122deg) scale(1.2);
 }
-
