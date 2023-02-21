@@ -36,6 +36,7 @@
     position: absolute;
     min-width: 272px;
     max-width: 480px;
+    max-height: 505px;
     width: 100%;
     padding: 32px 16px;
     background-color: $white-color;
@@ -49,10 +50,15 @@
       visibility: visible;
       pointer-events: initial;
       position: relative;
-      right: 17px;
-      bottom: 330px;
-      animation: zoom 750ms linear forwards;
+      right: 16px;
+      bottom: 325px;
+      min-height: 357px;
+      @media screen and (min-width: 768px){
+        max-height: 505px;
+        max-width: 480px;
+      }
     }
+    
   }
 
   &__title {
@@ -148,6 +154,10 @@
     line-height: calc(12 / 10);
     letter-spacing: 0.03em;
     color: $main-grey-color;
+    @media screen and (min-width: 768px){
+      font-size: 14px;
+      line-height: calc(17 / 14);
+    }
   }
 
   &__button {
@@ -162,6 +172,7 @@
     stroke: #000000;
     transition: color 250ms linear;
     cursor: pointer;
+   
     
   }
 
@@ -182,6 +193,7 @@
     @media screen and (min-width: 768px) {
       height: 50px;
       min-width: 416px;
+     
     }
 
     &[disabled]{
@@ -220,8 +232,14 @@
   padding-left: 42px;
   padding-right: 42px;
   margin-bottom: 16px;
- 
+  @media screen and (min-width: $tablet) {
+    padding-left: 56px;
+    padding-right: 57px;
+ }
 }
+
+
+
 
 @keyframes zoom {
   0% {
@@ -235,16 +253,16 @@
   }
 }
 
-.modal__label:not(:last-child) {
+.js-inputname {
   margin-bottom: 14px;
   @media screen and (min-width: 768px) {
-    margin-bottom: 24px;
+   margin-bottom: 24px;
   }
 }
 
 .modal__label > .data{
   padding: 7px 0;
-  padding-left: 35px;
+  padding-left: 15px;
   padding-right: 5px;
   width: 100%;
   height: 35px;
@@ -252,17 +270,31 @@
   border: 1px solid $secondary-gray-color;
   border-radius: 4px;
 
+  @media screen and (min-width: 768px) {
+    height: 49px;
+  }
+}
+.js-inputemail{
+  margin-bottom:24px ;
+  @media screen and (min-width: 768px) {
+   margin-bottom: 38px;
+  }
 }
 
 .data:invalid {
   border-color: red;
 }
 
-.data:valid {
-  border-color: green;
+
+
+
+.data::placeholder{
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  @media screen and (min-width: 768px) {
+   font-size: 14px;
+   }
 }
-
-
 
 
 
