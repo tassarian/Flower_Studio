@@ -47,9 +47,6 @@
       opacity: 0;
       
     }
-
- 
-
     }
   }
 }
@@ -233,6 +230,7 @@
   top: 535px;
   right: 114px;
   bottom: 157px;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
