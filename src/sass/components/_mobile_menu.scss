@@ -1,0 +1,49 @@
+.mobile_menu {
+  background-color: $main-btn-color;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+
+  transition: all 0.3s ease-in-out;
+
+  &:not(.is_open) {
+    visibility: none;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.navigations__list_mb {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: center;
+  text-align: center;
+  padding: 124px 110px 180px;
+}
+
+.navigations__link_mb {
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  color: $white-color;
+}
+
+.js-close-menu {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+
+@include media-tablet-and-desktop {
+  .style_none {
+    display: none;
+  }
+}

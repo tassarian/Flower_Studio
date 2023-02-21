@@ -1,0 +1,116 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.blog__container {
+  overflow: hidden;
+}
+
+.blog__list {
+    position: relative;
+    margin-bottom: 28px;
+    min-width: 413px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    @media screen and (min-width: $tablet) {
+        min-width: 982px;
+        margin-bottom: 32px;
+    }
+
+    @include media-desktop {
+        min-width: 1084px;
+        margin-bottom: 44px;
+    }
+}
+
+.blog__text {
+    display: block;
+    margin-bottom: 32px;
+    text-align: center;
+
+    font-weight: inherit;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+
+    @media screen and (min-width: $tablet) {
+     margin-bottom: 40px;
+     font-size: 32px;
+     line-height: calc(39 / 32);
+    }
+
+    @include media-desktop {
+        margin-bottom: 48px;
+    }
+}
+
+.blog__btn-left {
+    position: absolute;
+    top: 50%;
+    left: 37px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    
+
+    @media screen and (min-width: $tablet) {
+        top: 50%;
+        left: 100px;
+    }
+    
+    @include media-desktop {
+        top: 50%;
+        left: -10px;
+    }
+}
+
+.blog__btn-right {
+    position: absolute;
+    top: 50%;
+    right: 37px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    @media screen and (min-width: $tablet) {
+        top: 50%;
+        right: 100px;
+    }
+    
+    @include media-desktop {
+        top: 50%;
+        right: -8px;
+    }
+}
+
+.blog__icon {
+    stroke: $white-color;
+    fill: transparent;
+    width: 42px;
+    height: 27px;
+
+    @media screen and (min-width: $tablet) {
+     width: 98px;
+     height: 64px;
+    }
+
+    @include media-desktop {
+     stroke: $black-color;
+     width: 96px;
+     height: 64px;
+    }
+}
+
+.blog__btn {
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    transform: scale(0.8);
+    transition: transform $time-dur $time-func;
+}
+
+.swiper-slide-active {
+    transform: scale(1);
+    transition: transform $time-dur $time-func;
+}
+
