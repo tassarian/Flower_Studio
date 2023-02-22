@@ -47,19 +47,19 @@
         font-size: 32px;
         margin-bottom: 8px;
         gap: 16px;
-       }
-       @media screen and (min-width: 1280px){
+
+        &::after {
+            content: '';
+            display: block;
+            height: 1px;
+            width: 100%;
+            background-color: $black-color;
+        }
+    }
+    @media screen and (min-width: 1280px){
         font-size: 36px;
         margin-bottom: 4px;
-       }
-}
-
-&__name::after {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: $black-color;
+    }
 }
 
 &__price{
