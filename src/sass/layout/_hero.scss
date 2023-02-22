@@ -232,3 +232,20 @@
 .hero-btn--white:focus .btn_icon-arrow-white {
   transform: rotate(122deg) scale(1.2);
 }
+
+.anchor-link {
+  display: block;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.btn_icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
