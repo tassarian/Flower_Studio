@@ -129,6 +129,7 @@
   justify-content: center;
   width: 64px;
   height: 76px;
+  position: relative;
   background-color: transparent;
   outline: transparent;
   cursor: pointer;
@@ -153,6 +154,23 @@
     }
 
   }
+}
+
+.anchor-link {
+  display: block;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.btn_icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .btn_icon-mob {
