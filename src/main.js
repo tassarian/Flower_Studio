@@ -1,4 +1,3 @@
-import './js/all-btn';
 import '/js/modal';
 import '/js/slider';
 import '/js/modal_subscribe';
