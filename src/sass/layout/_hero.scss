@@ -18,6 +18,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .hero_subtitle {
   margin-right: 14px;
   font-family: 'Montserrat';
@@ -35,17 +36,16 @@
       line-height: calc(39 / 32);
       margin-right: 110px;
       transition: transform 2s ease-in-out 100ms, opacity 1s ease-in-out 100ms;
+
     .hero:hover & {
       transform: translate(-20px, -20px);
       opacity: 0;
-
     }
-
-
-
     }
   }
 }
+
+
 .hero_subtitle--white {
   position: absolute;
   top: 579px;
@@ -59,14 +59,18 @@
   color: $white-color;
   opacity: 0;
   transition: transform 2s ease-in-out 100ms, opacity 2s ease-in-out 100ms;
-  .hero:hover & {
+
+    .hero:hover & {
     transform: translate(20px, 20px);
     opacity: 1;
   }
+
   @media screen and (max-width: $pre-desktop) {
     display: none;
   }
 }
+
+
 .hero-img {
   margin-right: 8px;
   display: block;
@@ -84,6 +88,8 @@
     }
   }
 }
+
+
 .hero-img.large {
   display: none;
   @media screen and (min-width: $desktop) {
@@ -104,6 +110,8 @@
 .hero:hover .hero-img.large {
   clip-path: inset(0 round 0);
 }
+
+
 .hero-btn {
   display: flex;
   align-items: center;
@@ -116,14 +124,20 @@
   padding: 0;
   margin: 0;
   border: none;
+
+
   @media screen and (min-width: $tablet) {
     width: 145px;
     height: 150px;
   }
+
+
   @media screen and (min-width: $desktop) {
     width: 166px;
     height: 166px;
     transition: transform 2s ease-in-out 100ms, opacity 1s ease-in-out 100ms;
+
+
     .hero:hover & {
       transform: translate(20px, -20px);
       opacity: 0;
@@ -131,7 +145,37 @@
     }
   }
 }
+
+.anchor-link {
+  display: block;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.btn_icon {
+  position: absolute;
+  width: 64px;
+  height: 76px;
+
+  
+  @media screen and (min-width: $tablet) {
+    width: 145px;
+    height: 150px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 166px;
+    height: 166px;
+}
+}
+
+
 .btn_icon-mob {
+  
   @media screen and (min-width: $tablet) {
     display: none;
   }
@@ -231,21 +275,4 @@
 .hero-btn--white:hover .btn_icon-arrow-white,
 .hero-btn--white:focus .btn_icon-arrow-white {
   transform: rotate(122deg) scale(1.2);
-}
-
-.anchor-link {
-  display: block;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-}
-
-.btn_icon {
-  position: absolute;
-  width: 100%;
-  height: 100%;
 }
