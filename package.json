@@ -12,7 +12,7 @@
     "sass": "^1.58.1",
     "vite": "^4.0.0"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Victoria Sulyma>",
   "license": "ISC",
   "dependencies": {
     "vite-plugin-full-reload": "^1.0.5",
